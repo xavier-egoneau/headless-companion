@@ -1,0 +1,6 @@
+/vendor
+/.env
+/.vscode
+composer.lock
+package.lock
+phpinfo.php

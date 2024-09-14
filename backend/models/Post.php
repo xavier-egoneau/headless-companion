@@ -19,14 +19,17 @@ class Post {
         $this->created_at = $data['created_at'] ?? date('Y-m-d H:i:s');
     }
 
-    public static function findAll() {
+    public static function findAll($page = 1, $perPage = 10) {
         $db = Database::getInstance();
-        $result = $db->query("SELECT * FROM posts ORDER BY created_at DESC");
+        $offset = ($page - 1) * $perPage;
+        $result = $db->query("SELECT * FROM posts ORDER BY created_at DESC LIMIT $perPage OFFSET $offset");
         $posts = [];
         while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
             $posts[] = new Post($row);
         }
-        return $posts;
+        return array_map(function($post) {
+            return $post->toArray();
+        }, $posts);
     }
 
     public static function findById($id) {
@@ -37,6 +40,32 @@ class Post {
         $row = $result->fetchArray(SQLITE3_ASSOC);
         return $row ? new Post($row) : null;
     }
+
+    public function update($data) {
+        $this->title = $data['title'] ?? $this->title;
+        $this->content = $data['content'] ?? $this->content;
+        $db = Database::getInstance();
+        $stmt = $db->prepare("UPDATE posts SET title = :title, content = :content WHERE id = :id");
+        $stmt->bindValue(':id', $this->id, SQLITE3_INTEGER);
+        $stmt->bindValue(':title', $this->title, SQLITE3_TEXT);
+        $stmt->bindValue(':content', $this->content, SQLITE3_TEXT);
+        $stmt->execute();
+    }
+
+    public function delete() {
+        $db = Database::getInstance();
+        $stmt = $db->prepare("DELETE FROM posts WHERE id = :id");
+        $stmt->bindValue(':id', $this->id, SQLITE3_INTEGER);
+        $stmt->execute();
+    }
+
+    public static function count() {
+        $db = Database::getInstance();
+        $result = $db->query("SELECT COUNT(*) as count FROM posts");
+        $row = $result->fetchArray(SQLITE3_ASSOC);
+        return $row['count'];
+    }
+
 
     public function save() {
         $db = Database::getInstance();
@@ -51,14 +80,10 @@ class Post {
         $stmt->bindValue(':content', $this->content, SQLITE3_TEXT);
         $stmt->bindValue(':author_id', $this->author_id, SQLITE3_INTEGER);
         $stmt->execute();
-    }
 
-    public function delete() {
-        if (!$this->id) return false;
-        $db = Database::getInstance();
-        $stmt = $db->prepare("DELETE FROM posts WHERE id = :id");
-        $stmt->bindValue(':id', $this->id, SQLITE3_INTEGER);
-        return $stmt->execute();
+        if (!$this->id) {
+            $this->id = $db->getConnection()->lastInsertRowID();
+        }
     }
 
     // Getters
@@ -72,4 +97,15 @@ class Post {
     public function setTitle($title) { $this->title = $title; }
     public function setContent($content) { $this->content = $content; }
     public function setAuthorId($author_id) { $this->author_id = $author_id; }
+
+    // Méthode pour convertir l'objet en tableau (utile pour la sérialisation JSON)
+    public function toArray() {
+        return [
+            'id' => $this->id,
+            'title' => $this->title,
+            'content' => $this->content,
+            'author_id' => $this->author_id,
+            'created_at' => $this->created_at
+        ];
+    }
 }

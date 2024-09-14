@@ -32,17 +32,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 $request = $_SERVER['REQUEST_URI'];
 
 try {
-    switch ($request) {
-        case '/api/auth':
-            require __DIR__ . '/backend/api/auth.php';
-            break;
-        case '/api/posts':
-            require __DIR__ . '/backend/api/posts.php';
-            break;
-        default:
-            http_response_code(404);
-            echo json_encode(['error' => 'Not Found']);
-            break;
+    if (strpos($request, '/api/posts') === 0) {
+        require __DIR__ . '/backend/api/posts.php';
+    } elseif ($request === '/api/auth') {
+        require __DIR__ . '/backend/api/auth.php';
+    } else {
+        http_response_code(404);
+        echo json_encode(['error' => 'Not Found']);
     }
 } catch (Exception $e) {
     error_log("Erreur inattendue dans index.php: " . $e->getMessage());

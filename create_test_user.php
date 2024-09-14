@@ -6,23 +6,32 @@ require_once __DIR__ . '/backend/models/User.php';
 
 use App\Models\User;
 
-$testUser = new User([
-    'username' => 'test_user',
-    'password' => 'test_password',
-    'email' => 'test@example.com'
-]);
+$testUsername = 'test_user';
+$testPassword = 'test_password';
+$testEmail = 'test@example.com';
 
 try {
-    $testUser->save();
-    echo "Utilisateur de test créé avec succès.\n";
+    $existingUser = User::findByUsername($testUsername);
+    
+    if ($existingUser) {
+        echo "L'utilisateur de test existe déjà.\n";
+    } else {
+        $testUser = new User([
+            'username' => $testUsername,
+            'password' => $testPassword,
+            'email' => $testEmail
+        ]);
+        $testUser->save();
+        echo "Utilisateur de test créé avec succès.\n";
+    }
     
     // Vérification
-    $savedUser = User::findByUsername('test_user');
-    if ($savedUser && $savedUser->verifyPassword('test_password')) {
+    $savedUser = User::findByUsername($testUsername);
+    if ($savedUser && $savedUser->verifyPassword($testPassword)) {
         echo "Vérification réussie : l'utilisateur peut s'authentifier.\n";
     } else {
         echo "Erreur : La vérification du mot de passe a échoué.\n";
     }
 } catch (Exception $e) {
-    echo "Erreur lors de la création de l'utilisateur de test : " . $e->getMessage() . "\n";
+    echo "Erreur : " . $e->getMessage() . "\n";
 }

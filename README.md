@@ -13,6 +13,7 @@
 7. [Gestion des templates avec Twig](#gestion-des-templates-avec-twig)
 8. [Système de logging](#système-de-logging)
 9. [Dépannage](#dépannage)
+10. [Mise à jour du schéma de la base de données](#mise-à-jour-du-schéma-de-la-base-de-données)
 
 ## Introduction
 
@@ -170,3 +171,97 @@ Pour renforcer la sécurité :
 - Utilisez HTTPS en production.
 - Mettez régulièrement à jour les dépendances.
 - Effectuez des audits de sécurité périodiques.
+
+
+
+
+## Mise à jour du schéma de la base de données
+
+Lorsque vous apportez des modifications au schéma de la base de données, il est important de suivre une procédure structurée pour garantir que tous les environnements (développement, test, production) restent synchronisés. Voici la procédure recommandée :
+
+### 1. Création d'un script de migration
+
+Pour chaque modification du schéma, créez un nouveau script SQL dans le dossier `database/migrations/`. Nommez le fichier avec un timestamp et une brève description, par exemple : `2023_09_15_add_category_to_posts.sql`.
+
+Exemple de contenu pour ce fichier :
+
+```sql
+-- 2023_09_15_add_category_to_posts.sql
+ALTER TABLE posts ADD COLUMN category VARCHAR(50);
+```
+
+### 2. Mise à jour du schéma principal
+
+Mettez à jour le fichier `database/schema.sql` pour refléter l'état final de la structure de la base de données après toutes les migrations.
+
+### 3. Script de mise à jour
+
+Créez ou mettez à jour un script PHP `update_database.php` à la racine du projet :
+
+```php
+<?php
+
+require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/backend/config/database.php';
+
+$db = Database::getInstance();
+
+// Obtenez la liste des fichiers de migration
+$migrations = glob(__DIR__ . '/database/migrations/*.sql');
+
+// Triez les migrations par nom de fichier (qui commence par la date)
+sort($migrations);
+
+foreach ($migrations as $migration) {
+    $migrationName = basename($migration);
+    
+    // Vérifiez si la migration a déjà été appliquée
+    $result = $db->query("SELECT * FROM migrations WHERE name = '$migrationName'");
+    if ($result->fetchArray()) {
+        echo "Migration $migrationName déjà appliquée.\n";
+        continue;
+    }
+    
+    // Appliquez la migration
+    $sql = file_get_contents($migration);
+    $db->exec($sql);
+    
+    // Enregistrez la migration comme appliquée
+    $db->exec("INSERT INTO migrations (name) VALUES ('$migrationName')");
+    
+    echo "Migration $migrationName appliquée avec succès.\n";
+}
+
+echo "Mise à jour de la base de données terminée.\n";
+```
+
+### 4. Procédure de mise à jour
+
+Pour mettre à jour la base de données :
+
+1. Arrêtez l'application si elle est en cours d'exécution.
+2. Faites une sauvegarde de la base de données actuelle.
+3. Exécutez le script de mise à jour :
+   ```
+   php update_database.php
+   ```
+4. Vérifiez les logs pour vous assurer que toutes les migrations ont été appliquées avec succès.
+5. Redémarrez l'application.
+
+### 5. Gestion des erreurs
+
+Si une erreur se produit pendant la mise à jour :
+1. Consultez les logs d'erreur.
+2. Corrigez le problème dans le script de migration concerné.
+3. Restaurez la sauvegarde de la base de données si nécessaire.
+4. Réexécutez le script de mise à jour.
+
+### 6. Environnements multiples
+
+Assurez-vous d'appliquer ces mises à jour sur tous vos environnements (développement, test, production) en suivant la même procédure.
+
+### 7. Versioning
+
+N'oubliez pas de versionner vos scripts de migration et les mises à jour du schéma principal avec votre code source.
+
+En suivant cette procédure, vous pouvez gérer efficacement les modifications de votre schéma de base de données tout au long du cycle de vie de votre application.

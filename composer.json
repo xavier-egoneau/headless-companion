@@ -1,5 +1,5 @@
 {
-    "name": "egza/headless-cms",
+    "name": "your-vendor/headless-cms",
     "description": "A simple headless CMS with PHP backend and JavaScript frontend",
     "type": "project",
     "require": {
@@ -15,7 +15,7 @@
     },
     "authors": [
         {
-            "name": "egza",
+            "name": "Your Name",
             "email": "your.email@example.com"
         }
     ],

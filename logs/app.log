@@ -1,0 +1,14 @@
+[2024-09-14 23:48:47] [INFO] Requête reçue: /index.php
+[2024-09-14 23:48:47] [WARNING] Route non trouvée: /index.php
+[2024-09-14 23:49:17] [INFO] Requête reçue: /api/auth
+[2024-09-14 23:49:47] [INFO] Requête reçue: /api/posts
+[2024-09-14 23:49:47] [INFO] Requête reçue: /api/posts
+[2024-09-14 23:50:09] [INFO] Requête reçue: /api/posts/4
+[2024-09-14 23:50:09] [INFO] Requête reçue: /api/posts
+[2024-09-14 23:54:52] [INFO] Requête reçue: /api/auth
+[2024-09-14 23:55:05] [INFO] Requête reçue: /api/posts
+[2024-09-14 23:55:05] [INFO] Requête reçue: /api/posts
+[2024-09-14 23:55:24] [INFO] Requête reçue: /api/auth
+[2024-09-14 23:55:27] [INFO] Requête reçue: /api/posts
+[2024-09-14 23:55:30] [INFO] Requête reçue: /api/posts
+[2024-09-14 23:55:31] [INFO] Requête reçue: /api/posts

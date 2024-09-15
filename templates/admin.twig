@@ -1,0 +1,30 @@
+{% extends "layout.twig" %}
+
+{% block title %}Administration - CMS Headless{% endblock %}
+
+{% block content %}
+    <h1>Interface d'administration</h1>
+    <div id="loginForm">
+        <h2>Connexion</h2>
+        <input type="text" id="username" class="form-control mb-2" placeholder="Nom d'utilisateur">
+        <input type="password" id="password" class="form-control mb-2" placeholder="Mot de passe">
+        <button onclick="login()" class="btn btn-primary">Se connecter</button>
+    </div>
+    <div id="adminPanel" style="display:none;">
+        <h2>Gestion des Posts</h2>
+        <button onclick="getPosts()" class="btn btn-info mb-2">Afficher les posts</button>
+        <div id="postsList"></div>
+        <h3>Ajouter/Modifier un post</h3>
+        <input type="hidden" id="postId">
+        <input type="text" id="postTitle" class="form-control mb-2" placeholder="Titre du post">
+        <textarea id="postContent" class="form-control mb-2" placeholder="Contenu du post"></textarea>
+        <button onclick="savePost()" class="btn btn-success">Enregistrer le post</button>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Ici, vous pouvez inclure le code JavaScript pour l'administration
+// que nous avions précédemment dans admin.html
+</script>
+{% endblock %}

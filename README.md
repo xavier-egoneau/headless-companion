@@ -1,5 +1,4 @@
-# headless-companion
-Headless cms / twig/sass/php/api
+# Documentation CMS Headless
 
 ## Table des matières
 
@@ -8,6 +7,8 @@ Headless cms / twig/sass/php/api
 3. [Installation](#installation)
 4. [Configuration](#configuration)
 5. [Utilisation de l'API](#utilisation-de-lapi)
+   - [API Posts](#api-posts)
+   - [API Users](#api-users)
 6. [Interface d'administration](#interface-dadministration)
 7. [Gestion des templates avec Twig](#gestion-des-templates-avec-twig)
 8. [Système de logging](#système-de-logging)
@@ -15,7 +16,7 @@ Headless cms / twig/sass/php/api
 
 ## Introduction
 
-Ce CMS headless est une application PHP légère qui fournit une API RESTful pour la gestion de contenu, avec une interface d'administration intégrée. Il utilise SQLite comme base de données, Twig pour le rendu des templates, et intègre un système de logging personnalisé.
+Ce CMS headless est une application PHP légère qui fournit une API RESTful pour la gestion de contenu et d'utilisateurs, avec une interface d'administration intégrée. Il utilise SQLite comme base de données, Twig pour le rendu des templates, et intègre un système de logging personnalisé.
 
 ## Structure du projet
 
@@ -25,7 +26,8 @@ project-root/
 ├── backend/
 │   ├── api/
 │   │   ├── auth.php
-│   │   └── posts.php
+│   │   ├── posts.php
+│   │   └── users.php
 │   ├── config/
 │   │   ├── database.php
 │   │   ├── env.php
@@ -57,6 +59,7 @@ project-root/
 
 ## Installation
 
+
 1. Clonez le dépôt :
    ```
    git clone [URL_DU_REPO]
@@ -86,16 +89,33 @@ project-root/
 
 ## Utilisation de l'API
 
-L'API fournit les endpoints suivants :
+L'API fournit des endpoints pour la gestion des posts et des utilisateurs. Tous les endpoints, à l'exception de l'authentification, nécessitent un token JWT valide dans l'en-tête `Authorization`.
 
-- `POST /api/auth` : Authentification et obtention d'un token JWT
+### API Posts
+
 - `GET /api/posts` : Récupération de tous les posts
 - `GET /api/posts/{id}` : Récupération d'un post spécifique
 - `POST /api/posts` : Création d'un nouveau post
 - `PUT /api/posts/{id}` : Mise à jour d'un post existant
 - `DELETE /api/posts/{id}` : Suppression d'un post
 
-Tous les endpoints, à l'exception de l'authentification, nécessitent un token JWT valide dans l'en-tête `Authorization`.
+### API Users
+
+- `POST /api/auth` : Authentification et obtention d'un token JWT
+- `GET /api/users` : Récupération de tous les utilisateurs (admin seulement)
+- `GET /api/users/{id}` : Récupération d'un utilisateur spécifique (admin ou propriétaire)
+- `POST /api/users` : Création d'un nouvel utilisateur (admin seulement)
+- `PUT /api/users/{id}` : Mise à jour d'un utilisateur existant (admin ou propriétaire)
+- `DELETE /api/users/{id}` : Suppression d'un utilisateur (admin seulement)
+
+Exemple de requête pour créer un nouvel utilisateur :
+
+```bash
+curl -X POST http://localhost:8000/api/users \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN" \
+  -d '{"username":"newuser", "password":"securepassword", "email":"newuser@example.com"}'
+```
 
 ## Interface d'administration
 
@@ -106,9 +126,9 @@ L'interface d'administration est accessible à `/admin`. Elle permet de :
 - Créer un nouveau post
 - Modifier un post existant
 - Supprimer un post
+- Gérer les utilisateurs (pour les administrateurs)
 
 ## Gestion des templates avec Twig
-
 Les templates Twig se trouvent dans le dossier `templates/`. Le layout principal est `layout.twig`, et les autres templates étendent ce layout.
 
 Pour ajouter une nouvelle page :
@@ -137,3 +157,16 @@ Les logs sont stockés dans le dossier `logs/`.
 - Pour les problèmes liés à la base de données, vérifiez que le fichier SQLite existe et que PHP a les permissions pour y accéder et le modifier.
 
 Pour plus d'aide, consultez les logs dans le dossier `logs/` ou activez l'affichage des erreurs PHP en développement.
+
+## Sécurité
+
+- L'authentification utilise des tokens JWT avec une durée de validité limitée.
+- Les mots de passe sont hachés avant d'être stockés dans la base de données.
+- L'accès aux endpoints sensibles est restreint aux utilisateurs authentifiés et autorisés.
+- Les entrées utilisateur sont validées et nettoyées pour prévenir les injections SQL et XSS.
+- CORS est configuré pour limiter l'accès à l'API aux domaines autorisés.
+
+Pour renforcer la sécurité :
+- Utilisez HTTPS en production.
+- Mettez régulièrement à jour les dépendances.
+- Effectuez des audits de sécurité périodiques.

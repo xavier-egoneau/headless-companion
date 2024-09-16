@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Models;
-
+use App\Utils\Logger;
 use Database;
 
 class Post {
@@ -10,6 +10,7 @@ class Post {
     private $content;
     private $author_id;
     private $created_at;
+    private static $logger;
 
     public function __construct($data = []) {
         $this->id = $data['id'] ?? null;
@@ -19,37 +20,88 @@ class Post {
         $this->created_at = $data['created_at'] ?? date('Y-m-d H:i:s');
     }
 
-    public static function findAll($page = 1, $perPage = 10) {
-        $db = Database::getInstance();
-        $offset = ($page - 1) * $perPage;
-        $result = $db->query("SELECT * FROM posts ORDER BY created_at DESC LIMIT $perPage OFFSET $offset");
-        $posts = [];
-        while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
-            $posts[] = new Post($row);
+ 
+
+    
+
+
+    
+
+    public static function initLogger() {
+        if (!self::$logger) {
+            self::$logger = new Logger('post_model.log');
         }
-        return array_map(function($post) {
-            return $post->toArray();
-        }, $posts);
+    }
+
+    public static function findAll() {
+        self::initLogger();
+        self::$logger->info("Exécution de Post::findAll()");
+
+        try {
+            $db = Database::getInstance();
+            $result = $db->query("SELECT * FROM posts ORDER BY created_at DESC");
+            
+            $posts = [];
+            while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+                $posts[] = new self($row);
+            }
+
+            self::$logger->info("Nombre de posts récupérés : " . count($posts));
+            return $posts;
+        } catch (\Exception $e) {
+            self::$logger->error("Erreur dans Post::findAll(): " . $e->getMessage());
+            throw $e;
+        }
     }
 
     public static function findById($id) {
-        $db = Database::getInstance();
-        $stmt = $db->prepare("SELECT * FROM posts WHERE id = :id");
-        $stmt->bindValue(':id', $id, SQLITE3_INTEGER);
-        $result = $stmt->execute();
-        $row = $result->fetchArray(SQLITE3_ASSOC);
-        return $row ? new Post($row) : null;
+        self::initLogger();
+        self::$logger->info("Exécution de Post::findById() avec ID: $id");
+
+        try {
+            $db = Database::getInstance();
+            $stmt = $db->prepare("SELECT * FROM posts WHERE id = :id");
+            $stmt->bindValue(':id', $id, SQLITE3_INTEGER);
+            $result = $stmt->execute();
+            
+            $row = $result->fetchArray(SQLITE3_ASSOC);
+            if ($row) {
+                self::$logger->info("Post trouvé avec ID: $id");
+                return new self($row);
+            } else {
+                self::$logger->warning("Aucun post trouvé avec ID: $id");
+                return null;
+            }
+        } catch (\Exception $e) {
+            self::$logger->error("Erreur dans Post::findById(): " . $e->getMessage());
+            throw $e;
+        }
+    }
+
+    public function toArray() {
+        return [
+            'id' => $this->id,
+            'title' => $this->title,
+            'content' => $this->content,
+            'author_id' => $this->author_id,
+            'created_at' => $this->created_at
+        ];
     }
 
     public function update($data) {
         $this->title = $data['title'] ?? $this->title;
         $this->content = $data['content'] ?? $this->content;
+        
         $db = Database::getInstance();
         $stmt = $db->prepare("UPDATE posts SET title = :title, content = :content WHERE id = :id");
         $stmt->bindValue(':id', $this->id, SQLITE3_INTEGER);
         $stmt->bindValue(':title', $this->title, SQLITE3_TEXT);
         $stmt->bindValue(':content', $this->content, SQLITE3_TEXT);
-        $stmt->execute();
+        $result = $stmt->execute();
+        
+        if (!$result) {
+            throw new Exception("Erreur lors de la mise à jour du post");
+        }
     }
 
     public function delete() {
@@ -98,14 +150,5 @@ class Post {
     public function setContent($content) { $this->content = $content; }
     public function setAuthorId($author_id) { $this->author_id = $author_id; }
 
-    // Méthode pour convertir l'objet en tableau (utile pour la sérialisation JSON)
-    public function toArray() {
-        return [
-            'id' => $this->id,
-            'title' => $this->title,
-            'content' => $this->content,
-            'author_id' => $this->author_id,
-            'created_at' => $this->created_at
-        ];
-    }
+    
 }

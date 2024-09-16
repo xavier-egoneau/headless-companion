@@ -2,28 +2,50 @@
 
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
+use App\Utils\Logger;
 
 define('JWT_SECRET', 'your_secret_key_here'); // À remplacer par une clé secrète sécurisée
 
-function generateJWT($user_id) {
-    $issuedAt = time();
-    $expirationTime = $issuedAt + 3600; // Token valide pendant 1 heure
+function generateJWT($userId) {
+    $logger = new Logger('jwt.log');
+    $logger->info("Génération du JWT pour l'utilisateur ID: " . $userId);
 
-    $payload = [
-        'iat' => $issuedAt,
-        'exp' => $expirationTime,
-        'user_id' => $user_id
+    $secretKey  = 'your_secret_key';  // À remplacer par une vraie clé secrète
+    $issuedAt   = new DateTimeImmutable();
+    $expire     = $issuedAt->modify('+1 hour')->getTimestamp();
+    $serverName = "your_server_name";
+    
+    $data = [
+        'iat'  => $issuedAt->getTimestamp(),
+        'iss'  => $serverName,
+        'nbf'  => $issuedAt->getTimestamp(),
+        'exp'  => $expire,
+        'userId' => $userId,
     ];
 
-    return JWT::encode($payload, JWT_SECRET, 'HS256');
+    try {
+        $jwt = JWT::encode($data, $secretKey, 'HS256');
+        $logger->info("JWT généré avec succès pour l'utilisateur ID: " . $userId);
+        return $jwt;
+    } catch (Exception $e) {
+        $logger->error("Erreur lors de la génération du JWT: " . $e->getMessage());
+        throw $e;
+    }
 }
 
 function verifyJWT($token) {
+    $logger = new Logger('jwt.log');
+    $logger->info("Vérification du JWT");
+
+    $secretKey = 'your_secret_key';  // Assurez-vous que c'est la même clé que celle utilisée pour générer le token
+
     try {
-        $decoded = JWT::decode($token, new Key(JWT_SECRET, 'HS256'));
-        return $decoded->user_id;
+        $decoded = JWT::decode($token, new Key($secretKey, 'HS256'));
+        $logger->info("JWT décodé avec succès. User ID: " . $decoded->userId);
+        return $decoded->userId;
     } catch (Exception $e) {
-        return false;
+        $logger->error("Erreur de vérification du JWT: " . $e->getMessage());
+        return null;
     }
 }
 

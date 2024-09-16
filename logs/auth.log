@@ -1,0 +1,73 @@
+[2024-09-15 13:18:13] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-15 13:18:13] [INFO] Connexion réussie pour l'utilisateur: test_user
+[2024-09-15 13:18:13] [ERROR] Unexpected output: {"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY0MDYyOTMsImV4cCI6MTcyNjQwOTg5MywidXNlcl9pZCI6MX0.kaFdODMNLllfTG-MgvuNBv0NGT74cQ32dRLk56W9Lm0"}
+[2024-09-15 13:19:37] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-15 13:19:37] [INFO] Connexion réussie pour l'utilisateur: test_user
+[2024-09-15 13:19:37] [ERROR] Unexpected output: {"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY0MDYzNzcsImV4cCI6MTcyNjQwOTk3NywidXNlcl9pZCI6MX0.oorBSbgFn7mFr77QTstCH58KxroCInDzBax2xL7x6Xo"}
+[2024-09-15 13:21:49] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-15 13:21:49] [INFO] Connexion réussie pour l'utilisateur: test_user
+[2024-09-15 13:21:49] [ERROR] Unexpected output: {"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY0MDY1MDksImV4cCI6MTcyNjQxMDEwOSwidXNlcl9pZCI6MX0.VHDgxOwCppUCa5nGxb0xUiANYtgebfINa3LydRWOurY"}
+[2024-09-15 13:24:48] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-15 13:24:48] [INFO] Connexion réussie pour l'utilisateur: test_user
+[2024-09-15 13:24:48] [ERROR] Unexpected output: {"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY0MDY2ODgsImV4cCI6MTcyNjQxMDI4OCwidXNlcl9pZCI6MX0.WGVgPzf2KoL4yzsscr3u6r-eHliRIpx6R-4lxdRFaOg"}
+[2024-09-15 13:29:51] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-15 13:29:51] [INFO] Connexion réussie pour l'utilisateur: test_user
+[2024-09-15 13:29:51] [ERROR] Unexpected output: {"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY0MDY5OTEsImV4cCI6MTcyNjQxMDU5MSwidXNlcl9pZCI6MX0.mgxqff2RQl8FHSpA7VP3ChCwYov-c16JEbSHJFRlx_Y"}
+[2024-09-15 13:34:17] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-15 13:34:17] [INFO] Connexion réussie pour l'utilisateur: test_user
+[2024-09-15 13:34:17] [ERROR] Unexpected output: {"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY0MDcyNTcsImV4cCI6MTcyNjQxMDg1NywidXNlcl9pZCI6MX0.6g9keCRMowN1aInpXM3ITkRMlRdc3uC6V-3Vov3jQLM"}
+[2024-09-15 13:34:44] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-15 13:34:44] [INFO] Connexion réussie pour l'utilisateur: test_user
+[2024-09-15 13:34:44] [ERROR] Unexpected output: {"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY0MDcyODQsImV4cCI6MTcyNjQxMDg4NCwidXNlcl9pZCI6MX0.qagX1th-sTl6f7SUpdoPtdm2xJHFJonW4qcNrOxb6Gw"}
+[2024-09-15 13:41:07] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-15 13:41:07] [INFO] Connexion réussie pour l'utilisateur: test_user
+[2024-09-15 13:41:07] [ERROR] Unexpected output: {"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY0MDc2NjcsImV4cCI6MTcyNjQxMTI2NywidXNlcl9pZCI6MX0.UUphrssIHm8D9nKzh0jKzn-nYMZ4424A-n9B-FtPRiQ"}
+[2024-09-15 13:42:14] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-15 13:42:14] [INFO] Connexion réussie pour l'utilisateur: test_user
+[2024-09-15 13:42:14] [ERROR] Unexpected output: {"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY0MDc3MzQsImV4cCI6MTcyNjQxMTMzNCwidXNlcl9pZCI6MX0.HeOLcvSj5m-fnyIIo3_Jp8MciYUwA8OicfnqnDSM8_Y"}
+[2024-09-16 17:41:07] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 17:41:07] [ERROR] Erreur non gérée: Call to undefined method App\Utils\Logger::debug()
+Trace: #0 C:\Users\egza_\Documents\projets\headless-companion\index.php(34): require()
+#1 {main}
+[2024-09-16 17:44:25] [INFO] Tentative d'authentification reçue
+[2024-09-16 17:44:25] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 17:44:25] [ERROR] Erreur non gérée: Call to a member function info() on null
+Trace: #0 C:\Users\egza_\Documents\projets\headless-companion\backend\api\auth.php(27): App\Models\User::findByUsername()
+#1 C:\Users\egza_\Documents\projets\headless-companion\index.php(34): require('...')
+#2 {main}
+[2024-09-16 17:46:06] [INFO] Tentative d'authentification reçue
+[2024-09-16 17:46:06] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 17:46:06] [ERROR] Erreur non gérée: Call to a member function info() on null
+Trace: #0 C:\Users\egza_\Documents\projets\headless-companion\backend\api\auth.php(27): App\Models\User::findByUsername()
+#1 C:\Users\egza_\Documents\projets\headless-companion\index.php(40): require('...')
+#2 {main}
+[2024-09-16 18:01:40] [INFO] Tentative d'authentification reçue
+[2024-09-16 18:01:40] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 18:01:40] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-16 18:02:31] [INFO] Tentative d'authentification reçue
+[2024-09-16 18:02:31] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 18:02:32] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-16 18:08:21] [INFO] Tentative d'authentification reçue
+[2024-09-16 18:08:21] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 18:08:21] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-16 18:08:25] [INFO] Tentative d'authentification reçue
+[2024-09-16 18:08:25] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 18:08:25] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-16 18:08:27] [INFO] Tentative d'authentification reçue
+[2024-09-16 18:08:27] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 18:08:27] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-16 18:11:44] [INFO] Tentative d'authentification reçue
+[2024-09-16 18:11:44] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 18:11:44] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-16 18:21:22] [INFO] Tentative d'authentification reçue
+[2024-09-16 18:21:22] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 18:21:22] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-16 18:27:37] [INFO] Tentative d'authentification reçue
+[2024-09-16 18:27:37] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 18:27:37] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-16 18:27:49] [INFO] Tentative d'authentification reçue
+[2024-09-16 18:27:49] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 18:27:49] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-16 18:28:00] [INFO] Tentative d'authentification reçue
+[2024-09-16 18:28:00] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 18:28:01] [INFO] Authentification réussie pour l'utilisateur: test_user

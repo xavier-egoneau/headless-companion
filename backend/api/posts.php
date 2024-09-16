@@ -1,108 +1,61 @@
 <?php
 
-require_once __DIR__ . '/../config/env.php';
 require_once __DIR__ . '/../models/Post.php';
 require_once __DIR__ . '/../auth/jwt.php';
+require_once __DIR__ . '/../utils/Logger.php';
 
 use App\Models\Post;
-
+use App\Utils\Logger;
 header('Content-Type: application/json');
 
-// Débogage
-error_log("Requête reçue sur /api/posts");
-error_log("Méthode: " . $_SERVER['REQUEST_METHOD']);
-error_log("URI: " . $_SERVER['REQUEST_URI']);
+// Activation de l'affichage des erreurs pour le débogage
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-// Vérification du token JWT
-$headers = getallheaders();
-$authHeader = $headers['Authorization'] ?? '';
+$logger = new Logger('posts.log');
+$logger->info("Requête reçue : " . $_SERVER['REQUEST_METHOD'] . " " . $_SERVER['REQUEST_URI']);
+$logger->info("En-têtes reçus : " . json_encode(getallheaders()));
 
-if (!preg_match('/Bearer\s(\S+)/', $authHeader, $matches)) {
-    http_response_code(401);
-    echo json_encode(['error' => 'Token manquant ou invalide']);
-    exit;
-}
 
-$token = $matches[1];
-$userId = verifyJWT($token);
+try {
+    $logger->info("Début du traitement de la requête posts");
 
-if (!$userId) {
-    http_response_code(401);
-    echo json_encode(['error' => 'Token invalide']);
-    exit;
-}
+    // Vérification du token JWT
+    $headers = getallheaders();
+    $authHeader = $headers['Authorization'] ?? $headers['authorization'] ?? '';
 
-$method = $_SERVER['REQUEST_METHOD'];
-$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-$uri = explode('/', $uri);
-$postId = $uri[3] ?? null;
+    $logger->info("Auth Header: " . $authHeader);
 
-switch ($method) {
-    case 'GET':
-        error_log("Traitement de la requête GET");
-        if ($postId) {
-            // ... (code pour un post spécifique)
-        } else {
-            $page = $_GET['page'] ?? 1;
-            $perPage = $_GET['per_page'] ?? 10;
-            error_log("Page: $page, PerPage: $perPage");
-            $posts = Post::findAll($page, $perPage);
-            $totalPosts = Post::count();
-            $totalPages = ceil($totalPosts / $perPage);
-            error_log("Nombre de posts trouvés: " . count($posts));
-            echo json_encode([
-                'posts' => $posts,
-                'page' => (int)$page,
-                'per_page' => (int)$perPage,
-                'total_posts' => $totalPosts,
-                'total_pages' => $totalPages
-            ]);
-        }
-        break;
+    if (!preg_match('/Bearer\s(\S+)/', $authHeader, $matches)) {
+        $logger->error("Token manquant ou invalide");
+        http_response_code(401);
+        echo json_encode(['error' => 'Token manquant ou invalide']);
+        exit;
+    }
 
-    case 'POST':
-        $data = json_decode(file_get_contents('php://input'), true);
-        $post = new Post($data);
-        $post->setAuthorId($userId);
-        $post->save();
-        echo json_encode(['message' => 'Post créé avec succès', 'post' => $post->toArray()]);
-        break;
+    $token = $matches[1];
+    $userId = verifyJWT($token);
 
-    case 'PUT':
-        if (!$postId) {
-            http_response_code(400);
-            echo json_encode(['error' => 'ID du post manquant']);
-            break;
-        }
-        $post = Post::findById($postId);
-        if (!$post) {
-            http_response_code(404);
-            echo json_encode(['error' => 'Post non trouvé']);
-            break;
-        }
-        $data = json_decode(file_get_contents('php://input'), true);
-        $post->update($data);
-        echo json_encode(['message' => 'Post mis à jour avec succès', 'post' => $post->toArray()]);
-        break;
+    if (!$userId) {
+        $logger->error("Token invalide");
+        throw new Exception('Token invalide');
+    }
 
-    case 'DELETE':
-        if (!$postId) {
-            http_response_code(400);
-            echo json_encode(['error' => 'ID du post manquant']);
-            break;
-        }
-        $post = Post::findById($postId);
-        if (!$post) {
-            http_response_code(404);
-            echo json_encode(['error' => 'Post non trouvé']);
-            break;
-        }
-        $post->delete();
-        echo json_encode(['message' => 'Post supprimé avec succès']);
-        break;
+    $logger->info("Token validé pour l'utilisateur ID: " . $userId);
 
-    default:
-        http_response_code(405);
-        echo json_encode(['error' => 'Méthode non autorisée']);
-        break;
+    $posts = Post::findAll();
+    $logger->info("Nombre de posts trouvés : " . count($posts));
+
+    $postsArray = array_map(function($post) {
+        return $post->toArray();
+    }, $posts);
+
+    echo json_encode(['posts' => $postsArray]);
+    $logger->info("Posts récupérés et envoyés avec succès");
+
+} catch (Exception $e) {
+    $logger->error("Erreur dans posts.php: " . $e->getMessage() . "\nTrace: " . $e->getTraceAsString());
+    http_response_code(500);
+    echo json_encode(['error' => 'Erreur interne du serveur', 'message' => $e->getMessage()]);
 }

@@ -1,0 +1,103 @@
+[2024-09-15 13:24:49] [INFO] Requête de posts reçue pour l'utilisateur ID: 1
+[2024-09-15 13:24:49] [INFO] Posts récupérés avec succès. Nombre de posts: 3
+[2024-09-15 13:24:50] [INFO] Requête de posts reçue pour l'utilisateur ID: 1
+[2024-09-15 13:24:50] [INFO] Posts récupérés avec succès. Nombre de posts: 3
+[2024-09-15 13:24:53] [INFO] Requête de posts reçue pour l'utilisateur ID: 1
+[2024-09-15 13:24:53] [INFO] Posts récupérés avec succès. Nombre de posts: 3
+[2024-09-15 13:24:54] [INFO] Requête de posts reçue pour l'utilisateur ID: 1
+[2024-09-15 13:24:54] [INFO] Posts récupérés avec succès. Nombre de posts: 3
+[2024-09-15 13:24:56] [INFO] Requête de posts reçue pour l'utilisateur ID: 1
+[2024-09-15 13:24:56] [INFO] Posts récupérés avec succès. Nombre de posts: 3
+[2024-09-15 13:25:17] [INFO] Requête de posts reçue pour l'utilisateur ID: 1
+[2024-09-15 13:25:17] [INFO] Posts récupérés avec succès. Nombre de posts: 3
+[2024-09-15 13:25:21] [INFO] Requête de posts reçue pour l'utilisateur ID: 1
+[2024-09-15 13:25:21] [INFO] Posts récupérés avec succès. Nombre de posts: 3
+[2024-09-16 18:01:41] [ERROR] Token invalide
+[2024-09-16 18:02:19] [ERROR] Token invalide
+[2024-09-16 18:02:35] [ERROR] Token invalide
+[2024-09-16 18:11:44] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY1MTAzMDQsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY1MTAzMDQsImV4cCI6MTcyNjUxMzkwNCwidXNlcklkIjoxfQ.k8zO905OdfUO2nf844q8cKpmWl7XSj_6JUv_0iiCcnE
+[2024-09-16 18:11:44] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-16 18:11:44] [ERROR] Erreur non gérée: Class "App\Models\Logger" not found
+Trace: #0 C:\Users\egza_\Documents\projets\headless-companion\backend\api\posts.php(40): App\Models\Post::findAll()
+#1 C:\Users\egza_\Documents\projets\headless-companion\index.php(37): require('...')
+#2 {main}
+[2024-09-16 18:11:51] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY1MTAzMDQsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY1MTAzMDQsImV4cCI6MTcyNjUxMzkwNCwidXNlcklkIjoxfQ.k8zO905OdfUO2nf844q8cKpmWl7XSj_6JUv_0iiCcnE
+[2024-09-16 18:11:51] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-16 18:11:51] [ERROR] Erreur non gérée: Class "App\Models\Logger" not found
+Trace: #0 C:\Users\egza_\Documents\projets\headless-companion\backend\api\posts.php(40): App\Models\Post::findAll()
+#1 C:\Users\egza_\Documents\projets\headless-companion\index.php(37): require('...')
+#2 {main}
+[2024-09-16 18:21:22] [INFO] Début du traitement de la requête posts
+[2024-09-16 18:21:22] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY1MTA4ODIsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY1MTA4ODIsImV4cCI6MTcyNjUxNDQ4MiwidXNlcklkIjoxfQ.K2td4w3DPIvy5Q9iyxCX1o_mhk6pLchlYpjT4zrDSRI
+[2024-09-16 18:21:22] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-16 18:21:22] [INFO] Nombre de posts trouvés : 3
+[2024-09-16 18:21:22] [INFO] Posts récupérés et envoyés avec succès
+[2024-09-16 18:21:24] [INFO] Début du traitement de la requête posts
+[2024-09-16 18:21:24] [INFO] Auth Header: Bearer
+[2024-09-16 18:21:24] [ERROR] Token manquant ou invalide
+[2024-09-16 18:21:24] [ERROR] Erreur dans posts.php: Token manquant ou invalide
+Trace: #0 C:\Users\egza_\Documents\projets\headless-companion\index.php(37): require()
+#1 {main}
+[2024-09-16 18:21:50] [INFO] Début du traitement de la requête posts
+[2024-09-16 18:21:50] [INFO] Auth Header: Bearer
+[2024-09-16 18:21:50] [ERROR] Token manquant ou invalide
+[2024-09-16 18:21:50] [ERROR] Erreur dans posts.php: Token manquant ou invalide
+Trace: #0 C:\Users\egza_\Documents\projets\headless-companion\index.php(37): require()
+#1 {main}
+[2024-09-16 18:22:03] [INFO] Début du traitement de la requête posts
+[2024-09-16 18:22:03] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY1MTA4ODIsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY1MTA4ODIsImV4cCI6MTcyNjUxNDQ4MiwidXNlcklkIjoxfQ.K2td4w3DPIvy5Q9iyxCX1o_mhk6pLchlYpjT4zrDSRI
+[2024-09-16 18:22:03] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-16 18:22:03] [INFO] Nombre de posts trouvés : 3
+[2024-09-16 18:22:03] [INFO] Posts récupérés et envoyés avec succès
+[2024-09-16 18:22:06] [INFO] Début du traitement de la requête posts
+[2024-09-16 18:22:06] [INFO] Auth Header: Bearer
+[2024-09-16 18:22:06] [ERROR] Token manquant ou invalide
+[2024-09-16 18:22:06] [ERROR] Erreur dans posts.php: Token manquant ou invalide
+Trace: #0 C:\Users\egza_\Documents\projets\headless-companion\index.php(37): require()
+#1 {main}
+[2024-09-16 18:23:00] [INFO] Début du traitement de la requête posts
+[2024-09-16 18:23:00] [INFO] Auth Header: Bearer
+[2024-09-16 18:23:00] [ERROR] Token manquant ou invalide
+[2024-09-16 18:23:00] [ERROR] Erreur dans posts.php: Token manquant ou invalide
+Trace: #0 C:\Users\egza_\Documents\projets\headless-companion\index.php(37): require()
+#1 {main}
+[2024-09-16 18:27:38] [INFO] Requête reçue : GET /api/posts
+[2024-09-16 18:27:38] [INFO] En-têtes reçus : {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY1MTA4ODIsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY1MTA4ODIsImV4cCI6MTcyNjUxNDQ4MiwidXNlcklkIjoxfQ.K2td4w3DPIvy5Q9iyxCX1o_mhk6pLchlYpjT4zrDSRI","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-16 18:27:38] [INFO] Début du traitement de la requête posts
+[2024-09-16 18:27:38] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY1MTA4ODIsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY1MTA4ODIsImV4cCI6MTcyNjUxNDQ4MiwidXNlcklkIjoxfQ.K2td4w3DPIvy5Q9iyxCX1o_mhk6pLchlYpjT4zrDSRI
+[2024-09-16 18:27:38] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-16 18:27:38] [INFO] Nombre de posts trouvés : 3
+[2024-09-16 18:27:38] [INFO] Posts récupérés et envoyés avec succès
+[2024-09-16 18:27:39] [INFO] Requête reçue : GET /api/posts/5
+[2024-09-16 18:27:39] [INFO] En-têtes reçus : {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY1MTEyNTcsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY1MTEyNTcsImV4cCI6MTcyNjUxNDg1NywidXNlcklkIjoxfQ.XBGFJW7KKGIR1HTc26mT49Rvp9pO82mC8i7ZQoUlcv0","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-16 18:27:39] [INFO] Début du traitement de la requête posts
+[2024-09-16 18:27:39] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY1MTEyNTcsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY1MTEyNTcsImV4cCI6MTcyNjUxNDg1NywidXNlcklkIjoxfQ.XBGFJW7KKGIR1HTc26mT49Rvp9pO82mC8i7ZQoUlcv0
+[2024-09-16 18:27:39] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-16 18:27:39] [INFO] Nombre de posts trouvés : 3
+[2024-09-16 18:27:39] [INFO] Posts récupérés et envoyés avec succès
+[2024-09-16 18:27:51] [INFO] Requête reçue : GET /api/posts
+[2024-09-16 18:27:51] [INFO] En-têtes reçus : {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY1MTA4ODIsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY1MTA4ODIsImV4cCI6MTcyNjUxNDQ4MiwidXNlcklkIjoxfQ.K2td4w3DPIvy5Q9iyxCX1o_mhk6pLchlYpjT4zrDSRI","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-16 18:27:51] [INFO] Début du traitement de la requête posts
+[2024-09-16 18:27:51] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY1MTA4ODIsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY1MTA4ODIsImV4cCI6MTcyNjUxNDQ4MiwidXNlcklkIjoxfQ.K2td4w3DPIvy5Q9iyxCX1o_mhk6pLchlYpjT4zrDSRI
+[2024-09-16 18:27:51] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-16 18:27:51] [INFO] Nombre de posts trouvés : 3
+[2024-09-16 18:27:51] [INFO] Posts récupérés et envoyés avec succès
+[2024-09-16 18:27:57] [INFO] Requête reçue : DELETE /api/posts/1
+[2024-09-16 18:27:57] [INFO] En-têtes reçus : {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","sec-ch-ua-platform":"\"Windows\"","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Origin":"http:\/\/localhost:8000","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-16 18:27:57] [INFO] Début du traitement de la requête posts
+[2024-09-16 18:27:57] [INFO] Auth Header: Bearer
+[2024-09-16 18:27:57] [ERROR] Token manquant ou invalide
+[2024-09-16 18:27:57] [INFO] Requête reçue : GET /api/posts
+[2024-09-16 18:27:57] [INFO] En-têtes reçus : {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY1MTA4ODIsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY1MTA4ODIsImV4cCI6MTcyNjUxNDQ4MiwidXNlcklkIjoxfQ.K2td4w3DPIvy5Q9iyxCX1o_mhk6pLchlYpjT4zrDSRI","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-16 18:27:57] [INFO] Début du traitement de la requête posts
+[2024-09-16 18:27:57] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY1MTA4ODIsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY1MTA4ODIsImV4cCI6MTcyNjUxNDQ4MiwidXNlcklkIjoxfQ.K2td4w3DPIvy5Q9iyxCX1o_mhk6pLchlYpjT4zrDSRI
+[2024-09-16 18:27:57] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-16 18:27:57] [INFO] Nombre de posts trouvés : 3
+[2024-09-16 18:27:57] [INFO] Posts récupérés et envoyés avec succès
+[2024-09-16 18:28:02] [INFO] Requête reçue : GET /api/posts
+[2024-09-16 18:28:02] [INFO] En-têtes reçus : {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY1MTA4ODIsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY1MTA4ODIsImV4cCI6MTcyNjUxNDQ4MiwidXNlcklkIjoxfQ.K2td4w3DPIvy5Q9iyxCX1o_mhk6pLchlYpjT4zrDSRI","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-16 18:28:02] [INFO] Début du traitement de la requête posts
+[2024-09-16 18:28:02] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY1MTA4ODIsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY1MTA4ODIsImV4cCI6MTcyNjUxNDQ4MiwidXNlcklkIjoxfQ.K2td4w3DPIvy5Q9iyxCX1o_mhk6pLchlYpjT4zrDSRI
+[2024-09-16 18:28:02] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-16 18:28:02] [INFO] Nombre de posts trouvés : 3
+[2024-09-16 18:28:02] [INFO] Posts récupérés et envoyés avec succès

@@ -1,0 +1,18 @@
+[2024-09-16 18:21:22] [INFO] Exécution de Post::findAll()
+[2024-09-16 18:21:22] [INFO] Nombre de posts récupérés : 3
+[2024-09-16 18:21:33] [INFO] Exécution de Post::findAll()
+[2024-09-16 18:21:33] [INFO] Nombre de posts récupérés : 3
+[2024-09-16 18:21:33] [INFO] Exécution de Post::findById() avec ID: 1
+[2024-09-16 18:21:33] [INFO] Post trouvé avec ID: 1
+[2024-09-16 18:22:03] [INFO] Exécution de Post::findAll()
+[2024-09-16 18:22:03] [INFO] Nombre de posts récupérés : 3
+[2024-09-16 18:27:38] [INFO] Exécution de Post::findAll()
+[2024-09-16 18:27:38] [INFO] Nombre de posts récupérés : 3
+[2024-09-16 18:27:39] [INFO] Exécution de Post::findAll()
+[2024-09-16 18:27:39] [INFO] Nombre de posts récupérés : 3
+[2024-09-16 18:27:51] [INFO] Exécution de Post::findAll()
+[2024-09-16 18:27:51] [INFO] Nombre de posts récupérés : 3
+[2024-09-16 18:27:57] [INFO] Exécution de Post::findAll()
+[2024-09-16 18:27:57] [INFO] Nombre de posts récupérés : 3
+[2024-09-16 18:28:02] [INFO] Exécution de Post::findAll()
+[2024-09-16 18:28:02] [INFO] Nombre de posts récupérés : 3

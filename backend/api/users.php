@@ -1,47 +1,89 @@
 <?php
 
-namespace App\Models;
+require_once __DIR__ . '/../models/User.php';
+require_once __DIR__ . '/../utils/Logger.php';
 
-use Database;
+use App\Models\User;
+use App\Utils\Logger;
 
-class User {
-    private $id;
-    private $username;
-    private $password;
-    private $email;
-    private $created_at;
+$logger = new Logger('users_api.log');
 
-    public function __construct($data = []) {
-        $this->id = $data['id'] ?? null;
-        $this->username = $data['username'] ?? '';
-        $this->password = $data['password'] ?? '';
-        $this->email = $data['email'] ?? '';
-        $this->created_at = $data['created_at'] ?? date('Y-m-d H:i:s');
+header('Content-Type: application/json');
+
+// Vérification du token JWT (à implémenter)
+
+$method = $_SERVER['REQUEST_METHOD'];
+$userId = isset($_GET['id']) ? intval($_GET['id']) : null;
+
+try {
+    switch ($method) {
+        case 'GET':
+            if ($userId) {
+                $user = User::findById($userId);
+                if ($user) {
+                    echo json_encode($user->toArray());
+                } else {
+                    http_response_code(404);
+                    echo json_encode(['error' => 'Utilisateur non trouvé']);
+                }
+            } else {
+                $users = User::findAll();
+                echo json_encode(['users' => array_map(fn($u) => $u->toArray(), $users)]);
+            }
+            break;
+
+        case 'POST':
+            $data = json_decode(file_get_contents('php://input'), true);
+            $user = new User($data);
+            $user->save();
+            echo json_encode(['message' => 'Utilisateur créé avec succès', 'user' => $user->toArray()]);
+            break;
+
+        case 'PUT':
+            if (!$userId) {
+                http_response_code(400);
+                echo json_encode(['error' => 'ID utilisateur manquant']);
+                break;
+            }
+            $data = json_decode(file_get_contents('php://input'), true);
+            $user = User::findById($userId);
+            if ($user) {
+                $user->setUsername($data['username'] ?? $user->getUsername());
+                $user->setEmail($data['email'] ?? $user->getEmail());
+                if (isset($data['password'])) {
+                    $user->setPassword($data['password']);
+                }
+                $user->save();
+                echo json_encode(['message' => 'Utilisateur mis à jour avec succès', 'user' => $user->toArray()]);
+            } else {
+                http_response_code(404);
+                echo json_encode(['error' => 'Utilisateur non trouvé']);
+            }
+            break;
+
+        case 'DELETE':
+            if (!$userId) {
+                http_response_code(400);
+                echo json_encode(['error' => 'ID utilisateur manquant']);
+                break;
+            }
+            $user = User::findById($userId);
+            if ($user) {
+                $user->delete();
+                echo json_encode(['message' => 'Utilisateur supprimé avec succès']);
+            } else {
+                http_response_code(404);
+                echo json_encode(['error' => 'Utilisateur non trouvé']);
+            }
+            break;
+
+        default:
+            http_response_code(405);
+            echo json_encode(['error' => 'Méthode non autorisée']);
+            break;
     }
-
-    public static function findByUsername($username) {
-        $db = Database::getInstance();
-        $stmt = $db->prepare("SELECT * FROM users WHERE username = :username");
-        $stmt->bindValue(':username', $username, SQLITE3_TEXT);
-        $result = $stmt->execute();
-        $row = $result->fetchArray(SQLITE3_ASSOC);
-        return $row ? new User($row) : null;
-    }
-
-    public function save() {
-        $db = Database::getInstance();
-        if ($this->id) {
-            $stmt = $db->prepare("UPDATE users SET username = :username, password = :password, email = :email WHERE id = :id");
-            $stmt->bindValue(':id', $this->id, SQLITE3_INTEGER);
-        } else {
-            $stmt = $db->prepare("INSERT INTO users (username, password, email, created_at) VALUES (:username, :password, :email, :created_at)");
-            $stmt->bindValue(':created_at', $this->created_at, SQLITE3_TEXT);
-        }
-        $stmt->bindValue(':username', $this->username, SQLITE3_TEXT);
-        $stmt->bindValue(':password', password_hash($this->password, PASSWORD_DEFAULT), SQLITE3_TEXT);
-        $stmt->bindValue(':email', $this->email, SQLITE3_TEXT);
-        $stmt->execute();
-    }
-
-    // Getters and setters...
+} catch (Exception $e) {
+    $logger->error("Erreur dans l'API utilisateurs : " . $e->getMessage());
+    http_response_code(500);
+    echo json_encode(['error' => 'Erreur interne du serveur']);
 }

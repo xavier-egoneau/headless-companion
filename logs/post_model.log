@@ -111,3 +111,12 @@
 [2024-09-18 18:04:57] [INFO] Connexion à la base de données établie
 [2024-09-18 18:04:57] [INFO] Requête SQL exécutée
 [2024-09-18 18:04:57] [INFO] Nombre de posts récupérés : 3
+[2024-09-18 18:09:16] [INFO] Début de l'exécution de Post::findAll()
+[2024-09-18 18:09:16] [INFO] Connexion à la base de données établie
+[2024-09-18 18:09:16] [INFO] Requête SQL exécutée
+[2024-09-18 18:09:16] [INFO] Nombre de posts récupérés : 4
+[2024-09-18 18:09:24] [INFO] Post sauvegardé avec ID: 8
+[2024-09-18 18:09:26] [INFO] Début de l'exécution de Post::findAll()
+[2024-09-18 18:09:26] [INFO] Connexion à la base de données établie
+[2024-09-18 18:09:26] [INFO] Requête SQL exécutée
+[2024-09-18 18:09:26] [INFO] Nombre de posts récupérés : 5

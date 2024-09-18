@@ -65,24 +65,34 @@ class Post {
     public function save() {
         self::initLogger();
         $db = Database::getInstance();
-        if ($this->id) {
-            $stmt = $db->prepare("UPDATE posts SET title = :title, content = :content, author_id = :author_id WHERE id = :id");
-            $stmt->bindValue(':id', $this->id, SQLITE3_INTEGER);
-        } else {
-            $stmt = $db->prepare("INSERT INTO posts (title, content, author_id, created_at) VALUES (:title, :content, :author_id, :created_at)");
-            $stmt->bindValue(':created_at', $this->createdAt, SQLITE3_TEXT);
-        }
-        $stmt->bindValue(':title', $this->title, SQLITE3_TEXT);
-        $stmt->bindValue(':content', $this->content, SQLITE3_TEXT);
-        $stmt->bindValue(':author_id', $this->authorId, SQLITE3_INTEGER);
-        $result = $stmt->execute();
+        try {
+            if ($this->id) {
+                $stmt = $db->prepare("UPDATE posts SET title = :title, content = :content, author_id = :author_id WHERE id = :id");
+                $stmt->bindValue(':id', $this->id, SQLITE3_INTEGER);
+            } else {
+                $stmt = $db->prepare("INSERT INTO posts (title, content, author_id, created_at) VALUES (:title, :content, :author_id, :created_at)");
+                $stmt->bindValue(':created_at', $this->createdAt, SQLITE3_TEXT);
+            }
+            $stmt->bindValue(':title', $this->title, SQLITE3_TEXT);
+            $stmt->bindValue(':content', $this->content, SQLITE3_TEXT);
+            $stmt->bindValue(':author_id', $this->authorId, SQLITE3_INTEGER);
+            
+            $result = $stmt->execute();
 
-        if (!$this->id) {
-            $this->id = $db->lastInsertRowID();
-        }
+            if (!$result) {
+                throw new Exception("Erreur lors de l'exécution de la requête : " . $db->getConnection()->lastErrorMsg());
+            }
 
-        self::$logger->info("Post sauvegardé avec ID: " . $this->id);
-        return $result !== false;
+            if (!$this->id) {
+                $this->id = $db->getConnection()->lastInsertRowID();
+            }
+
+            self::$logger->info("Post sauvegardé avec ID: " . $this->id);
+            return true;
+        } catch (Exception $e) {
+            self::$logger->error("Erreur lors de la sauvegarde du post : " . $e->getMessage());
+            throw $e;
+        }
     }
 
     public function update($data) {

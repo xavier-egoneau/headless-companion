@@ -1,7 +1,7 @@
 /vendor
 /.env
 /cache/*
-/logs/*
+.log
 /.vscode
 composer.lock
 package.lock

@@ -436,3 +436,15 @@ Trace: #0 {main}
 [2024-09-18 18:04:53] [INFO] Redirection vers posts.php
 [2024-09-18 18:04:57] [INFO] Requête reçue: /api/posts
 [2024-09-18 18:04:57] [INFO] Redirection vers posts.php
+[2024-09-18 18:05:42] [INFO] Requête reçue: /api/posts
+[2024-09-18 18:05:42] [INFO] Redirection vers posts.php
+[2024-09-18 18:09:14] [INFO] Requête reçue: /admin
+[2024-09-18 18:09:14] [INFO] Rendu de la page admin
+[2024-09-18 18:09:16] [INFO] Requête reçue: /api/auth
+[2024-09-18 18:09:16] [INFO] Redirection vers auth.php
+[2024-09-18 18:09:16] [INFO] Requête reçue: /api/posts
+[2024-09-18 18:09:16] [INFO] Redirection vers posts.php
+[2024-09-18 18:09:24] [INFO] Requête reçue: /api/posts
+[2024-09-18 18:09:24] [INFO] Redirection vers posts.php
+[2024-09-18 18:09:26] [INFO] Requête reçue: /api/posts
+[2024-09-18 18:09:26] [INFO] Redirection vers posts.php

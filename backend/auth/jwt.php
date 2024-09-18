@@ -35,7 +35,7 @@ function generateJWT($userId) {
 
 function verifyJWT($token) {
     $logger = new Logger('jwt.log');
-    $logger->info("Vérification du JWT");
+    $logger->info("Vérification du JWT: " . $token);
 
     $secretKey = 'your_secret_key';  // Assurez-vous que c'est la même clé que celle utilisée pour générer le token
 
@@ -48,7 +48,6 @@ function verifyJWT($token) {
         return null;
     }
 }
-
 function getUserIdFromToken($token) {
     $user_id = verifyJWT($token);
     if (!$user_id) {

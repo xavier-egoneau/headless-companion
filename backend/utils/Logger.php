@@ -17,6 +17,10 @@ class Logger {
         $this->log('ERROR', $message);
     }
 
+    public function warning($message) {
+        $this->log('WARNING', $message);
+    }
+
     private function log($level, $message) {
         $timestamp = date('Y-m-d H:i:s');
         $logMessage = "[$timestamp] [$level] $message" . PHP_EOL;

@@ -297,3 +297,142 @@ Trace: #0 {main}
 [2024-09-16 18:28:00] [INFO] Redirection vers auth.php
 [2024-09-16 18:28:02] [INFO] Requête reçue: /api/posts
 [2024-09-16 18:28:02] [INFO] Redirection vers posts.php
+[2024-09-16 18:37:52] [INFO] Requête reçue: /admin
+[2024-09-16 18:37:52] [INFO] Rendu de la page admin
+[2024-09-16 18:37:55] [INFO] Requête reçue: /api/auth
+[2024-09-16 18:37:55] [INFO] Redirection vers auth.php
+[2024-09-16 18:37:56] [INFO] Requête reçue: /api/posts
+[2024-09-16 18:37:56] [INFO] Redirection vers posts.php
+[2024-09-16 18:37:57] [INFO] Requête reçue: /api/posts/5
+[2024-09-16 18:37:57] [INFO] Redirection vers posts.php
+[2024-09-16 18:42:52] [INFO] Requête reçue: /api/posts
+[2024-09-16 18:42:52] [INFO] Redirection vers posts.php
+[2024-09-16 18:42:53] [INFO] Requête reçue: /api/posts
+[2024-09-16 18:42:53] [INFO] Redirection vers posts.php
+[2024-09-16 18:42:54] [INFO] Requête reçue: /api/posts/5
+[2024-09-16 18:42:54] [INFO] Redirection vers posts.php
+[2024-09-16 18:43:09] [INFO] Requête reçue: /api/posts/5
+[2024-09-16 18:43:09] [INFO] Redirection vers posts.php
+[2024-09-16 18:43:09] [INFO] Requête reçue: /api/posts
+[2024-09-16 18:43:09] [INFO] Redirection vers posts.php
+[2024-09-16 18:43:14] [INFO] Requête reçue: /admin
+[2024-09-16 18:43:14] [INFO] Rendu de la page admin
+[2024-09-16 18:43:16] [INFO] Requête reçue: /api/auth
+[2024-09-16 18:43:16] [INFO] Redirection vers auth.php
+[2024-09-16 18:43:17] [INFO] Requête reçue: /api/posts
+[2024-09-16 18:43:17] [INFO] Redirection vers posts.php
+[2024-09-16 18:43:18] [INFO] Requête reçue: /api/posts/5
+[2024-09-16 18:43:18] [INFO] Redirection vers posts.php
+[2024-09-16 18:43:23] [INFO] Requête reçue: /api/posts/undefined
+[2024-09-16 18:43:23] [INFO] Redirection vers posts.php
+[2024-09-16 18:43:52] [INFO] Requête reçue: /api/posts/5
+[2024-09-16 18:43:52] [INFO] Redirection vers posts.php
+[2024-09-16 18:55:33] [INFO] Requête reçue: /admin
+[2024-09-16 18:55:33] [INFO] Rendu de la page admin
+[2024-09-16 18:55:36] [INFO] Requête reçue: /api/auth
+[2024-09-16 18:55:36] [INFO] Redirection vers auth.php
+[2024-09-16 18:55:36] [INFO] Requête reçue: /api/posts
+[2024-09-16 18:55:36] [INFO] Redirection vers posts.php
+[2024-09-16 19:00:04] [INFO] Requête reçue: /admin
+[2024-09-16 19:00:04] [INFO] Rendu de la page admin
+[2024-09-16 19:00:06] [INFO] Requête reçue: /api/auth
+[2024-09-16 19:00:06] [INFO] Redirection vers auth.php
+[2024-09-16 19:00:07] [INFO] Requête reçue: /api/posts
+[2024-09-16 19:00:07] [INFO] Redirection vers posts.php
+[2024-09-16 19:06:20] [INFO] Requête reçue: /admin
+[2024-09-16 19:06:20] [INFO] Rendu de la page admin
+[2024-09-16 19:06:22] [INFO] Requête reçue: /api/auth
+[2024-09-16 19:06:22] [INFO] Redirection vers auth.php
+[2024-09-16 19:06:22] [INFO] Requête reçue: /api/posts
+[2024-09-16 19:06:22] [INFO] Redirection vers posts.php
+[2024-09-16 19:11:21] [INFO] Requête reçue: /admin
+[2024-09-16 19:11:21] [INFO] Rendu de la page admin
+[2024-09-16 19:11:23] [INFO] Requête reçue: /api/auth
+[2024-09-16 19:11:23] [INFO] Redirection vers auth.php
+[2024-09-16 19:11:23] [INFO] Requête reçue: /api/posts
+[2024-09-16 19:11:23] [INFO] Redirection vers posts.php
+[2024-09-16 19:11:26] [INFO] Requête reçue: /api/posts
+[2024-09-16 19:11:26] [INFO] Redirection vers posts.php
+[2024-09-16 19:11:28] [INFO] Requête reçue: /api/posts/5
+[2024-09-16 19:11:28] [INFO] Redirection vers posts.php
+[2024-09-16 19:11:40] [INFO] Requête reçue: /admin
+[2024-09-16 19:11:40] [INFO] Rendu de la page admin
+[2024-09-16 19:11:41] [INFO] Requête reçue: /api/auth
+[2024-09-16 19:11:41] [INFO] Redirection vers auth.php
+[2024-09-16 19:11:41] [INFO] Requête reçue: /api/posts
+[2024-09-16 19:11:41] [INFO] Redirection vers posts.php
+[2024-09-16 19:11:52] [INFO] Requête reçue: /api/posts
+[2024-09-16 19:11:52] [INFO] Redirection vers posts.php
+[2024-09-16 19:11:59] [INFO] Requête reçue: /api/posts/1
+[2024-09-16 19:11:59] [INFO] Redirection vers posts.php
+[2024-09-18 17:47:04] [INFO] Requête reçue: /
+[2024-09-18 17:47:04] [ERROR] Erreur non gérée: Call to undefined method App\Utils\Logger::warning()
+Trace: #0 {main}
+[2024-09-18 17:48:46] [INFO] Requête reçue: /
+[2024-09-18 17:48:46] [WARNING] Route non trouvée: /
+[2024-09-18 17:49:10] [INFO] Requête reçue: /index.php
+[2024-09-18 17:49:10] [WARNING] Route non trouvée: /index.php
+[2024-09-18 17:49:15] [INFO] Requête reçue: /
+[2024-09-18 17:49:15] [WARNING] Route non trouvée: /
+[2024-09-18 17:49:22] [INFO] Requête reçue: /api/auth
+[2024-09-18 17:49:22] [INFO] Redirection vers auth.php
+[2024-09-18 17:49:29] [INFO] Requête reçue: /
+[2024-09-18 17:49:29] [WARNING] Route non trouvée: /
+[2024-09-18 17:53:52] [INFO] Requête reçue: /
+[2024-09-18 17:53:52] [INFO] Rendu de la page d'accueil
+[2024-09-18 17:53:55] [INFO] Requête reçue: /admin
+[2024-09-18 17:53:55] [INFO] Rendu de la page admin
+[2024-09-18 17:53:58] [INFO] Requête reçue: /api/auth
+[2024-09-18 17:53:58] [INFO] Redirection vers auth.php
+[2024-09-18 17:53:58] [INFO] Requête reçue: /api/posts
+[2024-09-18 17:53:58] [INFO] Redirection vers posts.php
+[2024-09-18 17:54:00] [INFO] Requête reçue: /api/posts
+[2024-09-18 17:54:00] [INFO] Redirection vers posts.php
+[2024-09-18 17:54:05] [INFO] Requête reçue: /api/posts/5
+[2024-09-18 17:54:05] [INFO] Redirection vers posts.php
+[2024-09-18 17:57:52] [INFO] Requête reçue: /admin
+[2024-09-18 17:57:52] [INFO] Rendu de la page admin
+[2024-09-18 17:57:54] [INFO] Requête reçue: /api/auth
+[2024-09-18 17:57:54] [INFO] Redirection vers auth.php
+[2024-09-18 17:57:54] [INFO] Requête reçue: /api/posts
+[2024-09-18 17:57:54] [INFO] Redirection vers posts.php
+[2024-09-18 17:57:55] [INFO] Requête reçue: /api/posts/6
+[2024-09-18 17:57:55] [INFO] Redirection vers posts.php
+[2024-09-18 17:57:58] [INFO] Requête reçue: /api/posts/2
+[2024-09-18 17:57:58] [INFO] Redirection vers posts.php
+[2024-09-18 17:58:04] [INFO] Requête reçue: /api/posts/5
+[2024-09-18 17:58:04] [INFO] Redirection vers posts.php
+[2024-09-18 17:59:54] [INFO] Requête reçue: /admin
+[2024-09-18 17:59:54] [INFO] Rendu de la page admin
+[2024-09-18 17:59:57] [INFO] Requête reçue: /api/auth
+[2024-09-18 17:59:57] [INFO] Redirection vers auth.php
+[2024-09-18 17:59:57] [INFO] Requête reçue: /api/posts
+[2024-09-18 17:59:57] [INFO] Redirection vers posts.php
+[2024-09-18 18:00:00] [INFO] Requête reçue: /api/posts/2
+[2024-09-18 18:00:00] [INFO] Redirection vers posts.php
+[2024-09-18 18:00:07] [INFO] Requête reçue: /api/posts/1
+[2024-09-18 18:00:07] [INFO] Redirection vers posts.php
+[2024-09-18 18:00:18] [INFO] Requête reçue: /api/posts/2
+[2024-09-18 18:00:18] [INFO] Redirection vers posts.php
+[2024-09-18 18:00:27] [INFO] Requête reçue: /admin
+[2024-09-18 18:00:27] [INFO] Rendu de la page admin
+[2024-09-18 18:00:30] [INFO] Requête reçue: /api/auth
+[2024-09-18 18:00:30] [INFO] Redirection vers auth.php
+[2024-09-18 18:00:30] [INFO] Requête reçue: /api/posts
+[2024-09-18 18:00:30] [INFO] Redirection vers posts.php
+[2024-09-18 18:00:33] [INFO] Requête reçue: /api/posts/2
+[2024-09-18 18:00:33] [INFO] Redirection vers posts.php
+[2024-09-18 18:00:51] [INFO] Requête reçue: /api/posts/2
+[2024-09-18 18:00:51] [INFO] Redirection vers posts.php
+[2024-09-18 18:04:17] [INFO] Requête reçue: /admin
+[2024-09-18 18:04:17] [INFO] Rendu de la page admin
+[2024-09-18 18:04:20] [INFO] Requête reçue: /api/auth
+[2024-09-18 18:04:20] [INFO] Redirection vers auth.php
+[2024-09-18 18:04:20] [INFO] Requête reçue: /api/posts
+[2024-09-18 18:04:20] [INFO] Redirection vers posts.php
+[2024-09-18 18:04:22] [INFO] Requête reçue: /api/posts/2
+[2024-09-18 18:04:22] [INFO] Redirection vers posts.php
+[2024-09-18 18:04:53] [INFO] Requête reçue: /api/posts/1
+[2024-09-18 18:04:53] [INFO] Redirection vers posts.php
+[2024-09-18 18:04:57] [INFO] Requête reçue: /api/posts
+[2024-09-18 18:04:57] [INFO] Redirection vers posts.php

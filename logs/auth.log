@@ -71,3 +71,44 @@ Trace: #0 C:\Users\egza_\Documents\projets\headless-companion\backend\api\auth.p
 [2024-09-16 18:28:00] [INFO] Tentative d'authentification reçue
 [2024-09-16 18:28:00] [INFO] Tentative de connexion pour l'utilisateur: test_user
 [2024-09-16 18:28:01] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-16 18:37:55] [INFO] Tentative d'authentification reçue
+[2024-09-16 18:37:55] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 18:37:55] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-16 18:43:16] [INFO] Tentative d'authentification reçue
+[2024-09-16 18:43:16] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 18:43:17] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-16 18:55:36] [INFO] Tentative d'authentification reçue
+[2024-09-16 18:55:36] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 18:55:36] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-16 19:00:06] [INFO] Tentative d'authentification reçue
+[2024-09-16 19:00:06] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 19:00:07] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-16 19:06:22] [INFO] Tentative d'authentification reçue
+[2024-09-16 19:06:22] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 19:06:22] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-16 19:11:23] [INFO] Tentative d'authentification reçue
+[2024-09-16 19:11:23] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 19:11:23] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-16 19:11:41] [INFO] Tentative d'authentification reçue
+[2024-09-16 19:11:41] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-16 19:11:41] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-18 17:49:22] [INFO] Tentative d'authentification reçue
+[2024-09-18 17:49:22] [INFO] Tentative de connexion pour l'utilisateur: 
+[2024-09-18 17:49:22] [ERROR] Erreur d'authentification: Le nom d'utilisateur et le mot de passe sont requis
+Trace: #0 C:\Users\egza_\Documents\projets\headless-companion\index.php(51): require()
+#1 {main}
+[2024-09-18 17:53:58] [INFO] Tentative d'authentification reçue
+[2024-09-18 17:53:58] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-18 17:53:58] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-18 17:57:54] [INFO] Tentative d'authentification reçue
+[2024-09-18 17:57:54] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-18 17:57:54] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-18 17:59:57] [INFO] Tentative d'authentification reçue
+[2024-09-18 17:59:57] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-18 17:59:57] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-18 18:00:30] [INFO] Tentative d'authentification reçue
+[2024-09-18 18:00:30] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-18 18:00:30] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-18 18:04:20] [INFO] Tentative d'authentification reçue
+[2024-09-18 18:04:20] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-18 18:04:20] [INFO] Authentification réussie pour l'utilisateur: test_user

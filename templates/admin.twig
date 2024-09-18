@@ -3,7 +3,6 @@
 {% block title %}Administration - CMS Headless{% endblock %}
 
 {% block content %}
-    <h1>Interface d'administration</h1>
     <div id="loginForm">
         <h2>Connexion</h2>
         <input type="text" id="username" class="form-control mb-2" placeholder="Nom d'utilisateur">
@@ -11,33 +10,24 @@
         <button onclick="login()" class="btn btn-primary">Se connecter</button>
     </div>
     <div id="adminPanel" style="display:none;">
-        <h2>Panneau d'administration</h2>
-        <button onclick="getPosts()" class="btn btn-info">Afficher les posts</button>
+        <h2>Gestion des Posts</h2>
+        <button onclick="getPosts()" class="btn btn-info mb-2">Afficher les posts</button>
+        <button onclick="showNewPostForm()" class="btn btn-success mb-2">Nouveau Post</button>
         <div id="postsList"></div>
-        
         <div id="postForm" style="display:none;">
-            <h3>Ajouter/Modifier un post</h3>
+            <h3 id="formTitle">Ajouter/Modifier un post</h3>
             <input type="hidden" id="postId">
             <input type="text" id="postTitle" class="form-control mb-2" placeholder="Titre du post">
-            <textarea id="postContent" class="form-control mb-2" placeholder="Contenu du post" rows="5"></textarea>
-            <button onclick="savePost()" class="btn btn-success">Enregistrer le post</button>
-            <button onclick="resetForm()" class="btn btn-secondary">Annuler</button>
+            <textarea id="postContent" class="form-control mb-2" placeholder="Contenu du post"></textarea>
+            <button onclick="savePost()" class="btn btn-primary">Enregistrer</button>
+            <button onclick="cancelEdit()" class="btn btn-secondary">Annuler</button>
         </div>
-        
-        <button onclick="resetForm()" class="btn btn-primary mt-3">Nouveau Post</button>
     </div>
 {% endblock %}
 
 {% block scripts %}
 <script>
-    console.log('Début du chargement du script admin');
-    let token = '';
-
-    function getToken() {
-        return token;
-    }
-
-     async function login() {
+    async function login() {
         try {
             const response = await fetch('/api/auth', {
                 method: 'POST',
@@ -50,22 +40,23 @@
 
             const data = await response.json();
             if (data.token) {
-                localStorage.setItem('authToken', data.token);  // Stockage du token
+                localStorage.setItem('authToken', data.token);
                 console.log('Token stocké:', data.token);
-                // Mise à jour de l'interface utilisateur après connexion réussie
                 document.getElementById('loginForm').style.display = 'none';
                 document.getElementById('adminPanel').style.display = 'block';
+                getPosts();
             } else {
                 throw new Error('Token non reçu');
             }
         } catch (error) {
             console.error('Erreur de connexion:', error);
+            alert('Erreur de connexion: ' + error.message);
         }
     }
 
     async function getPosts() {
         try {
-            const token = sessionStorage.getItem('authToken');
+            const token = localStorage.getItem('authToken');
             if (!token) {
                 throw new Error('Pas de token d\'authentification');
             }
@@ -76,9 +67,6 @@
                     'Content-Type': 'application/json'
                 }
             });
-            
-            console.log('Status:', response.status);
-            console.log('Status Text:', response.statusText);
             
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -102,50 +90,6 @@
         }
     }
 
-
-
-    async function savePost() {
-        const id = document.getElementById('postId').value;
-        const title = document.getElementById('postTitle').value;
-        const content = document.getElementById('postContent').value;
-        
-        const url = id ? `/api/posts/${id}` : '/api/posts';
-        const method = id ? 'PUT' : 'POST';
-
-        try {
-            const response = await fetch(url, {
-                method: method,
-                headers: {
-                    'Authorization': `Bearer ${getToken()}`,
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ title, content })
-            });
-            const data = await response.json();
-            console.log('Post sauvegardé:', data);
-            getPosts(); // Rafraîchir la liste des posts
-            resetForm();
-        } catch (error) {
-            console.error('Erreur lors de la sauvegarde du post:', error);
-        }
-    }
-
-    async function deletePost(id) {
-        if (confirm('Êtes-vous sûr de vouloir supprimer ce post ?')) {
-            try {
-                const response = await fetch(`/api/posts/${id}`, {
-                    method: 'DELETE',
-                    headers: { 'Authorization': `Bearer ${getToken()}` }
-                });
-                const data = await response.json();
-                console.log('Post supprimé:', data);
-                getPosts();
-            } catch (error) {
-                console.error('Erreur lors de la suppression du post:', error);
-            }
-        }
-    }
-
     async function editPost(id) {
         try {
             const token = localStorage.getItem('authToken');
@@ -154,7 +98,6 @@
             }
 
             const response = await fetch(`/api/posts/${id}`, {
-                method: 'GET',
                 headers: { 
                     'Authorization': `Bearer ${token}`,
                     'Content-Type': 'application/json'
@@ -165,34 +108,84 @@
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
 
-            const post = await response.json();
+            const data = await response.json();
+            console.log('Données reçues de l\'API:', data);
+
+            // Vérifiez si les données sont dans un objet 'post' ou directement dans la réponse
+            const post = data.post || data;
+
+            document.getElementById('postId').value = id;
+            document.getElementById('postTitle').value = post.title || '';
+            document.getElementById('postContent').value = post.content || '';
             
-            // Remplir le formulaire avec les données du post
-            document.getElementById('postId').value = post.id;
-            document.getElementById('postTitle').value = post.title;
-            document.getElementById('postContent').value = post.content;
-            
-            // Afficher le formulaire d'édition
+            // Affichage des valeurs dans la console pour le débogage
+            console.log('ID:', id);
+            console.log('Titre:', post.title);
+            console.log('Contenu:', post.content);
+
+            document.getElementById('formTitle').textContent = 'Modifier un post';
             document.getElementById('postForm').style.display = 'block';
         } catch (error) {
             console.error('Erreur lors de la récupération du post:', error);
             alert('Erreur lors de la récupération du post. Veuillez réessayer.');
         }
     }
+    
+    async function deletePost(id) {
+        if (confirm('Êtes-vous sûr de vouloir supprimer ce post ?')) {
+            try {
+                const token = localStorage.getItem('authToken');
+                if (!token) {
+                    throw new Error('Pas de token d\'authentification');
+                }
+
+                const response = await fetch(`/api/posts/${id}`, {
+                    method: 'DELETE',
+                    headers: { 
+                        'Authorization': `Bearer ${token}`,
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                alert('Post supprimé avec succès');
+                getPosts();
+            } catch (error) {
+                console.error('Erreur lors de la suppression du post:', error);
+                alert('Erreur lors de la suppression du post. Veuillez réessayer.');
+            }
+        }
+    }
+
+    function showNewPostForm() {
+        document.getElementById('postId').value = '';
+        document.getElementById('postTitle').value = '';
+        document.getElementById('postContent').value = '';
+        document.getElementById('formTitle').textContent = 'Ajouter un nouveau post';
+        document.getElementById('postForm').style.display = 'block';
+    }
 
     async function savePost() {
-        const id = document.getElementById('postId').value;
-        const title = document.getElementById('postTitle').value;
-        const content = document.getElementById('postContent').value;
-        
-        const url = id ? `/api/posts/${id}` : '/api/posts';
-        const method = id ? 'PUT' : 'POST';
-
         try {
+            const token = localStorage.getItem('authToken');
+            if (!token) {
+                throw new Error('Pas de token d\'authentification');
+            }
+
+            const id = document.getElementById('postId').value;
+            const title = document.getElementById('postTitle').value;
+            const content = document.getElementById('postContent').value;
+
+            const url = id ? `/api/posts/${id}` : '/api/posts';
+            const method = id ? 'PUT' : 'POST';
+
             const response = await fetch(url, {
                 method: method,
-                headers: {
-                    'Authorization': `Bearer ${getToken()}`,
+                headers: { 
+                    'Authorization': `Bearer ${token}`,
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({ title, content })
@@ -202,43 +195,17 @@
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
 
-            const result = await response.json();
-            console.log('Post sauvegardé:', result);
-            
-            // Rafraîchir la liste des posts et réinitialiser le formulaire
-            await getPosts();
-            resetForm();
-            
-            alert(id ? 'Post mis à jour avec succès!' : 'Nouveau post créé avec succès!');
+            alert(id ? 'Post mis à jour avec succès' : 'Nouveau post créé avec succès');
+            document.getElementById('postForm').style.display = 'none';
+            getPosts();
         } catch (error) {
             console.error('Erreur lors de la sauvegarde du post:', error);
             alert('Erreur lors de la sauvegarde du post. Veuillez réessayer.');
         }
     }
 
-    function resetForm() {
-        document.getElementById('postId').value = '';
-        document.getElementById('postTitle').value = '';
-        document.getElementById('postContent').value = '';
+    function cancelEdit() {
         document.getElementById('postForm').style.display = 'none';
     }
-
-    // Assurez-vous que toutes les fonctions sont disponibles globalement
-    window.login = login;
-    window.getPosts = getPosts;
-    window.editPost = editPost;
-    window.savePost = savePost;
-    window.deletePost = deletePost;
-
-    console.log('Fonctions définies globalement:', {
-        login: typeof window.login,
-        getPosts: typeof window.getPosts,
-        editPost: typeof window.editPost,
-        savePost: typeof window.savePost,
-        deletePost: typeof window.deletePost
-    });
-
-    // Vérification que le script est bien chargé
-    console.log('Fin du chargement du script admin');
 </script>
 {% endblock %}

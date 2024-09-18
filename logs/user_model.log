@@ -102,3 +102,11 @@
 [2024-09-18 18:09:16] [INFO] Utilisateur trouvé: test_user
 [2024-09-18 18:09:16] [INFO] Vérification du mot de passe pour l'utilisateur: test_user
 [2024-09-18 18:09:16] [INFO] Mot de passe correct pour l'utilisateur: test_user
+[2024-09-18 18:31:17] [INFO] Recherche de l'utilisateur: test_user
+[2024-09-18 18:31:17] [INFO] Utilisateur trouvé: test_user
+[2024-09-18 18:31:17] [INFO] Vérification du mot de passe pour l'utilisateur: test_user
+[2024-09-18 18:31:18] [INFO] Mot de passe correct pour l'utilisateur: test_user
+[2024-09-18 18:31:29] [INFO] Recherche de l'utilisateur: test_user
+[2024-09-18 18:31:29] [INFO] Utilisateur trouvé: test_user
+[2024-09-18 18:31:29] [INFO] Vérification du mot de passe pour l'utilisateur: test_user
+[2024-09-18 18:31:30] [INFO] Mot de passe correct pour l'utilisateur: test_user

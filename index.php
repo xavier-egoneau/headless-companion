@@ -42,6 +42,10 @@ try {
     } elseif ($request === '/admin' || $request === '/admin/') {
         $logger->info("Rendu de la page admin");
         echo $twig->render('admin.twig', ['currentTime' => new DateTime()]);
+    } elseif (preg_match('#^/admin/post(/(\d+))?$#', $request, $matches)) {
+        $postId = $matches[2] ?? null;
+        $logger->info("Rendu du formulaire de post" . ($postId ? " pour l'ID $postId" : ""));
+        echo $twig->render('post_form.twig', ['postId' => $postId]);
     } else {
         $logger->warning("Route non trouvée: " . $request);
         http_response_code(404);

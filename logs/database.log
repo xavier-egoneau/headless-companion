@@ -127,3 +127,28 @@
 [2024-09-18 18:09:26] [INFO] Tentative de connexion à la base de données
 [2024-09-18 18:09:26] [INFO] Connexion à la base de données établie avec succès
 [2024-09-18 18:09:26] [INFO] Exécution de la requête: SELECT * FROM posts ORDER BY created_at DESC
+[2024-09-18 18:23:58] [INFO] Tentative de connexion à la base de données
+[2024-09-18 18:23:58] [INFO] Connexion à la base de données établie avec succès
+[2024-09-18 18:23:58] [INFO] Exécution de la requête: SELECT * FROM posts ORDER BY created_at DESC
+[2024-09-18 18:31:16] [INFO] Tentative de connexion à la base de données
+[2024-09-18 18:31:16] [INFO] Connexion à la base de données établie avec succès
+[2024-09-18 18:31:17] [INFO] Tentative de connexion à la base de données
+[2024-09-18 18:31:17] [INFO] Connexion à la base de données établie avec succès
+[2024-09-18 18:31:18] [INFO] Tentative de connexion à la base de données
+[2024-09-18 18:31:18] [INFO] Connexion à la base de données établie avec succès
+[2024-09-18 18:31:18] [INFO] Exécution de la requête: SELECT * FROM posts ORDER BY created_at DESC
+[2024-09-18 18:31:20] [INFO] Tentative de connexion à la base de données
+[2024-09-18 18:31:20] [INFO] Connexion à la base de données établie avec succès
+[2024-09-18 18:31:25] [INFO] Tentative de connexion à la base de données
+[2024-09-18 18:31:25] [INFO] Connexion à la base de données établie avec succès
+[2024-09-18 18:31:27] [INFO] Tentative de connexion à la base de données
+[2024-09-18 18:31:27] [INFO] Connexion à la base de données établie avec succès
+[2024-09-18 18:31:29] [INFO] Tentative de connexion à la base de données
+[2024-09-18 18:31:29] [INFO] Connexion à la base de données établie avec succès
+[2024-09-18 18:31:30] [INFO] Tentative de connexion à la base de données
+[2024-09-18 18:31:30] [INFO] Connexion à la base de données établie avec succès
+[2024-09-18 18:31:30] [INFO] Exécution de la requête: SELECT * FROM posts ORDER BY created_at DESC
+[2024-09-18 18:31:41] [INFO] Tentative de connexion à la base de données
+[2024-09-18 18:31:41] [INFO] Connexion à la base de données établie avec succès
+[2024-09-18 18:31:41] [INFO] Tentative de connexion à la base de données
+[2024-09-18 18:31:41] [INFO] Connexion à la base de données établie avec succès

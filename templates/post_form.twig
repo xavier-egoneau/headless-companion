@@ -1,0 +1,93 @@
+{% extends "layout.twig" %}
+
+{% block title %}{% if postId %}Modifier{% else %}Ajouter{% endif %} un Post - CMS Headless{% endblock %}
+
+{% block content %}
+    <h2>{% if postId %}Modifier{% else %}Ajouter{% endif %} un Post</h2>
+    <form id="postForm">
+        <input type="hidden" id="postId" value="{{ postId }}">
+        <div class="mb-3">
+            <label for="postTitle" class="form-label">Titre</label>
+            <input type="text" class="form-control" id="postTitle" required>
+        </div>
+        <div class="mb-3">
+            <label for="postContent" class="form-label">Contenu</label>
+            <textarea class="form-control" id="postContent" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enregistrer</button>
+        <a href="/admin" class="btn btn-secondary">Retour</a>
+    </form>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    const postId = document.getElementById('postId').value;
+
+    async function loadPost() {
+        if (!postId) return; // C'est un nouveau post, pas besoin de charger
+
+        const token = localStorage.getItem('authToken');
+        if (!token) {
+            alert('Vous devez vous connecter');
+            window.location.href = '/admin';
+            return;
+        }
+
+        try {
+            const response = await fetch(`/api/posts/${postId}`, {
+                headers: { 
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            if (!response.ok) throw new Error('Erreur lors du chargement du post');
+
+            const post = await response.json();
+            document.getElementById('postTitle').value = post.title;
+            document.getElementById('postContent').value = post.content;
+        } catch (error) {
+            console.error('Erreur:', error);
+            alert('Erreur lors du chargement du post');
+        }
+    }
+
+    document.getElementById('postForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const token = localStorage.getItem('authToken');
+        if (!token) {
+            alert('Vous devez vous connecter');
+            window.location.href = '/admin';
+            return;
+        }
+
+        const title = document.getElementById('postTitle').value;
+        const content = document.getElementById('postContent').value;
+
+        try {
+            const url = postId ? `/api/posts/${postId}` : '/api/posts';
+            const method = postId ? 'PUT' : 'POST';
+
+            const response = await fetch(url, {
+                method: method,
+                headers: { 
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ title, content })
+            });
+
+            if (!response.ok) throw new Error('Erreur lors de la sauvegarde du post');
+
+            alert(postId ? 'Post mis à jour avec succès' : 'Nouveau post créé avec succès');
+            window.location.href = '/admin';
+        } catch (error) {
+            console.error('Erreur:', error);
+            alert('Erreur lors de la sauvegarde du post');
+        }
+    });
+
+    loadPost();
+</script>
+{% endblock %}

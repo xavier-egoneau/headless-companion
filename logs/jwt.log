@@ -148,3 +148,17 @@
 [2024-09-18 18:09:24] [INFO] JWT décodé avec succès. User ID: 1
 [2024-09-18 18:09:26] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODI5NTYsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODI5NTYsImV4cCI6MTcyNjY4NjU1NiwidXNlcklkIjoxfQ.hJ1tvRV43zAYX89iBMsWB0MMWNgCC7FUZwkCPf72aNs
 [2024-09-18 18:09:26] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 18:23:58] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODI5NTYsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODI5NTYsImV4cCI6MTcyNjY4NjU1NiwidXNlcklkIjoxfQ.hJ1tvRV43zAYX89iBMsWB0MMWNgCC7FUZwkCPf72aNs
+[2024-09-18 18:23:58] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 18:31:18] [INFO] Génération du JWT pour l'utilisateur ID: 1
+[2024-09-18 18:31:18] [INFO] JWT généré avec succès pour l'utilisateur ID: 1
+[2024-09-18 18:31:18] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODQyNzgsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODQyNzgsImV4cCI6MTcyNjY4Nzg3OCwidXNlcklkIjoxfQ._w1gwcFLAiZzWSHi69ndvnbRzRKBbwFJsvG7ZaX4FzY
+[2024-09-18 18:31:18] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 18:31:25] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODQyNzgsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODQyNzgsImV4cCI6MTcyNjY4Nzg3OCwidXNlcklkIjoxfQ._w1gwcFLAiZzWSHi69ndvnbRzRKBbwFJsvG7ZaX4FzY
+[2024-09-18 18:31:25] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 18:31:30] [INFO] Génération du JWT pour l'utilisateur ID: 1
+[2024-09-18 18:31:30] [INFO] JWT généré avec succès pour l'utilisateur ID: 1
+[2024-09-18 18:31:30] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODQyOTAsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODQyOTAsImV4cCI6MTcyNjY4Nzg5MCwidXNlcklkIjoxfQ.Mu3rFlkd8LgZhJX9OL_9tFc-ea3TzYnO9PwLYrpreRA
+[2024-09-18 18:31:30] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 18:31:41] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODQyOTAsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODQyOTAsImV4cCI6MTcyNjY4Nzg5MCwidXNlcklkIjoxfQ.Mu3rFlkd8LgZhJX9OL_9tFc-ea3TzYnO9PwLYrpreRA
+[2024-09-18 18:31:41] [INFO] JWT décodé avec succès. User ID: 1

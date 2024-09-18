@@ -448,3 +448,25 @@ Trace: #0 {main}
 [2024-09-18 18:09:24] [INFO] Redirection vers posts.php
 [2024-09-18 18:09:26] [INFO] Requête reçue: /api/posts
 [2024-09-18 18:09:26] [INFO] Redirection vers posts.php
+[2024-09-18 18:23:58] [INFO] Requête reçue: /api/posts
+[2024-09-18 18:23:58] [INFO] Redirection vers posts.php
+[2024-09-18 18:31:16] [INFO] Requête reçue: /admin
+[2024-09-18 18:31:16] [INFO] Rendu de la page admin
+[2024-09-18 18:31:17] [INFO] Requête reçue: /api/auth
+[2024-09-18 18:31:17] [INFO] Redirection vers auth.php
+[2024-09-18 18:31:18] [INFO] Requête reçue: /api/posts
+[2024-09-18 18:31:18] [INFO] Redirection vers posts.php
+[2024-09-18 18:31:20] [INFO] Requête reçue: /admin/post
+[2024-09-18 18:31:20] [INFO] Rendu du formulaire de post
+[2024-09-18 18:31:25] [INFO] Requête reçue: /api/posts
+[2024-09-18 18:31:25] [INFO] Redirection vers posts.php
+[2024-09-18 18:31:27] [INFO] Requête reçue: /admin
+[2024-09-18 18:31:27] [INFO] Rendu de la page admin
+[2024-09-18 18:31:29] [INFO] Requête reçue: /api/auth
+[2024-09-18 18:31:29] [INFO] Redirection vers auth.php
+[2024-09-18 18:31:30] [INFO] Requête reçue: /api/posts
+[2024-09-18 18:31:30] [INFO] Redirection vers posts.php
+[2024-09-18 18:31:41] [INFO] Requête reçue: /admin/post/9
+[2024-09-18 18:31:41] [INFO] Rendu du formulaire de post pour l'ID 9
+[2024-09-18 18:31:41] [INFO] Requête reçue: /api/posts/9
+[2024-09-18 18:31:41] [INFO] Redirection vers posts.php

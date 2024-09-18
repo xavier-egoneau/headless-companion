@@ -3,14 +3,17 @@
 {% block title %}Administration - CMS Headless{% endblock %}
 
 {% block content %}
-    <div id="loginForm">
+    <div id="loginForm" style="display:none;">
         <h2>Connexion</h2>
         <input type="text" id="username" class="form-control mb-2" placeholder="Nom d'utilisateur">
         <input type="password" id="password" class="form-control mb-2" placeholder="Mot de passe">
         <button onclick="login()" class="btn btn-primary">Se connecter</button>
     </div>
     <div id="adminPanel" style="display:none;">
-        <h2>Gestion des Posts</h2>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2>Gestion des Posts</h2>
+            <button onclick="logout()" class="btn btn-danger">Déconnexion</button>
+        </div>
         <a href="/admin/post" class="btn btn-success mb-2">Nouveau Post</a>
         <div id="postsList"></div>
     </div>
@@ -90,23 +93,12 @@
     async function deletePost(id) {
         if (confirm('Êtes-vous sûr de vouloir supprimer ce post ?')) {
             try {
-                const token = localStorage.getItem('authToken');
-                if (!token) {
-                    throw new Error('Pas de token d\'authentification');
-                }
-
-                const response = await fetch(`/api/posts/${id}`, {
-                    method: 'DELETE',
-                    headers: { 
-                        'Authorization': `Bearer ${token}`,
-                        'Content-Type': 'application/json'
-                    }
+                const response = await fetchWithToken(`/api/posts/${id}`, {
+                    method: 'DELETE'
                 });
-
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
-
                 alert('Post supprimé avec succès');
                 getPosts();
             } catch (error) {
@@ -164,8 +156,6 @@
         getPosts();
     }
 
-
-
     function showNewPostForm() {
         document.getElementById('postId').value = '';
         document.getElementById('postTitle').value = '';
@@ -213,5 +203,114 @@
     function cancelEdit() {
         document.getElementById('postForm').style.display = 'none';
     }
+
+    async function refreshToken() {
+        const refreshToken = localStorage.getItem('refreshToken');
+        if (!refreshToken) {
+            throw new Error('Pas de refresh token');
+        }
+
+        try {
+            const response = await fetch('/api/refresh', {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${refreshToken}`,
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error('Erreur lors du rafraîchissement du token');
+            }
+
+            const data = await response.json();
+            localStorage.setItem('authToken', data.token);
+            return data.token;
+        } catch (error) {
+            console.error('Erreur lors du rafraîchissement du token:', error);
+            // Rediriger vers la page de connexion si le rafraîchissement échoue
+            window.location.href = '/admin';
+        }
+    }
+
+    async function fetchWithToken(url, options = {}) {
+        let token = localStorage.getItem('authToken');
+
+        // Si pas de token, essayer de le rafraîchir
+        if (!token) {
+            try {
+                token = await refreshToken();
+            } catch (error) {
+                // Si le rafraîchissement échoue, rediriger vers la page de connexion
+                window.location.href = '/admin';
+                throw error;
+            }
+        }
+
+        // Préparer les options de la requête avec le token
+        const fetchOptions = {
+            ...options,
+            headers: {
+                ...options.headers,
+                'Authorization': `Bearer ${token}`
+            }
+        };
+
+        try {
+            // Effectuer la requête
+            const response = await fetch(url, fetchOptions);
+
+            // Si le token est expiré (401), essayer de le rafraîchir
+            if (response.status === 401) {
+                try {
+                    token = await refreshToken();
+                    // Mettre à jour le token dans les options
+                    fetchOptions.headers['Authorization'] = `Bearer ${token}`;
+                    // Réessayer la requête avec le nouveau token
+                    return await fetch(url, fetchOptions);
+                } catch (error) {
+                    // Si le rafraîchissement échoue, rediriger vers la page de connexion
+                    window.location.href = '/admin';
+                    throw error;
+                }
+            }
+
+            return response;
+        } catch (error) {
+            console.error('Erreur lors de la requête:', error);
+            throw error;
+        }
+    }
+
+    function showAdminPanel() { 
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('adminPanel').style.display = 'block';
+        getPosts();
+    }
+
+    function showLoginForm() {
+        document.getElementById('loginForm').style.display = 'block';
+        document.getElementById('adminPanel').style.display = 'none';
+    }
+
+    function logout() {
+        // Effacer les tokens du localStorage
+        localStorage.removeItem('authToken');
+        localStorage.removeItem('refreshToken');
+
+        // Rediriger vers la page de connexion
+        showLoginForm();
+    }
+
+    // Vérifier l'état de connexion au chargement de la page
+    document.addEventListener('DOMContentLoaded', function() {
+        const token = localStorage.getItem('authToken');
+        if (token) {
+            showAdminPanel();
+        } else {
+            showLoginForm();
+        }
+    });
+
 </script>
 {% endblock %}

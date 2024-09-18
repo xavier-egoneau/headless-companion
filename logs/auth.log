@@ -121,3 +121,18 @@ Trace: #0 C:\Users\egza_\Documents\projets\headless-companion\index.php(51): req
 [2024-09-18 18:31:29] [INFO] Tentative d'authentification reçue
 [2024-09-18 18:31:29] [INFO] Tentative de connexion pour l'utilisateur: test_user
 [2024-09-18 18:31:30] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-18 19:20:39] [INFO] Tentative d'authentification reçue
+[2024-09-18 19:20:39] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-18 19:20:39] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-18 19:31:14] [INFO] Tentative d'authentification reçue
+[2024-09-18 19:31:14] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-18 19:31:14] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-18 19:31:29] [INFO] Tentative d'authentification reçue
+[2024-09-18 19:31:29] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-18 19:31:29] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-18 19:38:13] [INFO] Tentative d'authentification reçue
+[2024-09-18 19:38:13] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-18 19:38:13] [INFO] Authentification réussie pour l'utilisateur: test_user
+[2024-09-18 19:59:46] [INFO] Tentative d'authentification reçue
+[2024-09-18 19:59:46] [INFO] Tentative de connexion pour l'utilisateur: test_user
+[2024-09-18 19:59:46] [INFO] Authentification réussie pour l'utilisateur: test_user

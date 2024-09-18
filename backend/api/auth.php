@@ -41,8 +41,9 @@ try {
     }
 
     $token = generateJWT($user->getId());
+    $refreshToken = generateRefreshToken($user->getId());
     $logger->info("Authentification réussie pour l'utilisateur: " . $username);
-    echo json_encode(['token' => $token]);
+    echo json_encode(['token' => $token, 'refreshToken' => $refreshToken]);
 
 } catch (Exception $e) {
     $logger->error("Erreur d'authentification: " . $e->getMessage() . "\nTrace: " . $e->getTraceAsString());

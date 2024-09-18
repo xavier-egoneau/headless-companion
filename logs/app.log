@@ -470,3 +470,91 @@ Trace: #0 {main}
 [2024-09-18 18:31:41] [INFO] Rendu du formulaire de post pour l'ID 9
 [2024-09-18 18:31:41] [INFO] Requête reçue: /api/posts/9
 [2024-09-18 18:31:41] [INFO] Redirection vers posts.php
+[2024-09-18 19:20:18] [INFO] Requête reçue: /
+[2024-09-18 19:20:18] [INFO] Rendu de la page d'accueil
+[2024-09-18 19:20:21] [INFO] Requête reçue: /admin
+[2024-09-18 19:20:21] [INFO] Rendu de la page admin
+[2024-09-18 19:20:28] [INFO] Requête reçue: /admin
+[2024-09-18 19:20:28] [INFO] Rendu de la page admin
+[2024-09-18 19:20:35] [INFO] Requête reçue: /
+[2024-09-18 19:20:35] [INFO] Rendu de la page d'accueil
+[2024-09-18 19:20:36] [INFO] Requête reçue: /admin
+[2024-09-18 19:20:36] [INFO] Rendu de la page admin
+[2024-09-18 19:20:39] [INFO] Requête reçue: /api/auth
+[2024-09-18 19:20:39] [INFO] Redirection vers auth.php
+[2024-09-18 19:20:39] [INFO] Requête reçue: /api/posts
+[2024-09-18 19:20:39] [INFO] Redirection vers posts.php
+[2024-09-18 19:20:43] [INFO] Requête reçue: /admin/post
+[2024-09-18 19:20:43] [INFO] Rendu du formulaire de post
+[2024-09-18 19:20:55] [INFO] Requête reçue: /api/posts
+[2024-09-18 19:20:55] [INFO] Redirection vers posts.php
+[2024-09-18 19:20:56] [INFO] Requête reçue: /admin
+[2024-09-18 19:20:56] [INFO] Rendu de la page admin
+[2024-09-18 19:31:12] [INFO] Requête reçue: /admin
+[2024-09-18 19:31:12] [INFO] Rendu de la page admin
+[2024-09-18 19:31:14] [INFO] Requête reçue: /api/auth
+[2024-09-18 19:31:14] [INFO] Redirection vers auth.php
+[2024-09-18 19:31:14] [INFO] Requête reçue: /api/posts
+[2024-09-18 19:31:14] [INFO] Redirection vers posts.php
+[2024-09-18 19:31:17] [INFO] Requête reçue: /admin/post
+[2024-09-18 19:31:17] [INFO] Rendu du formulaire de post
+[2024-09-18 19:31:23] [INFO] Requête reçue: /api/posts
+[2024-09-18 19:31:23] [INFO] Redirection vers posts.php
+[2024-09-18 19:31:25] [INFO] Requête reçue: /admin
+[2024-09-18 19:31:25] [INFO] Rendu de la page admin
+[2024-09-18 19:31:29] [INFO] Requête reçue: /api/auth
+[2024-09-18 19:31:29] [INFO] Redirection vers auth.php
+[2024-09-18 19:31:29] [INFO] Requête reçue: /api/posts
+[2024-09-18 19:31:29] [INFO] Redirection vers posts.php
+[2024-09-18 19:31:30] [INFO] Requête reçue: /admin/post/11
+[2024-09-18 19:31:30] [INFO] Rendu du formulaire de post pour l'ID 11
+[2024-09-18 19:31:30] [INFO] Requête reçue: /api/posts/11
+[2024-09-18 19:31:30] [INFO] Redirection vers posts.php
+[2024-09-18 19:31:32] [INFO] Requête reçue: /api/posts/11
+[2024-09-18 19:31:32] [INFO] Redirection vers posts.php
+[2024-09-18 19:31:33] [INFO] Requête reçue: /admin
+[2024-09-18 19:31:33] [INFO] Rendu de la page admin
+[2024-09-18 19:35:15] [INFO] Requête reçue: /admin
+[2024-09-18 19:35:15] [INFO] Rendu de la page admin
+[2024-09-18 19:35:16] [INFO] Requête reçue: /api/posts
+[2024-09-18 19:35:16] [INFO] Redirection vers posts.php
+[2024-09-18 19:35:18] [INFO] Requête reçue: /admin
+[2024-09-18 19:35:18] [INFO] Rendu de la page admin
+[2024-09-18 19:35:18] [INFO] Requête reçue: /api/posts
+[2024-09-18 19:35:18] [INFO] Redirection vers posts.php
+[2024-09-18 19:35:21] [INFO] Requête reçue: /admin
+[2024-09-18 19:35:21] [INFO] Rendu de la page admin
+[2024-09-18 19:35:21] [INFO] Requête reçue: /api/posts
+[2024-09-18 19:35:21] [INFO] Redirection vers posts.php
+[2024-09-18 19:35:26] [INFO] Requête reçue: /admin/post
+[2024-09-18 19:35:26] [INFO] Rendu du formulaire de post
+[2024-09-18 19:35:34] [INFO] Requête reçue: /api/posts
+[2024-09-18 19:35:34] [INFO] Redirection vers posts.php
+[2024-09-18 19:35:35] [INFO] Requête reçue: /admin
+[2024-09-18 19:35:35] [INFO] Rendu de la page admin
+[2024-09-18 19:35:35] [INFO] Requête reçue: /api/posts
+[2024-09-18 19:35:35] [INFO] Redirection vers posts.php
+[2024-09-18 19:38:09] [INFO] Requête reçue: /admin
+[2024-09-18 19:38:09] [INFO] Rendu de la page admin
+[2024-09-18 19:38:09] [INFO] Requête reçue: /api/posts
+[2024-09-18 19:38:09] [INFO] Redirection vers posts.php
+[2024-09-18 19:38:13] [INFO] Requête reçue: /api/auth
+[2024-09-18 19:38:13] [INFO] Redirection vers auth.php
+[2024-09-18 19:38:13] [INFO] Requête reçue: /api/posts
+[2024-09-18 19:38:13] [INFO] Redirection vers posts.php
+[2024-09-18 19:59:46] [INFO] Requête reçue: /api/auth
+[2024-09-18 19:59:46] [INFO] Redirection vers auth.php
+[2024-09-18 19:59:46] [INFO] Requête reçue: /api/posts
+[2024-09-18 19:59:46] [INFO] Redirection vers posts.php
+[2024-09-18 19:59:47] [INFO] Requête reçue: /admin/post
+[2024-09-18 19:59:47] [INFO] Rendu du formulaire de post
+[2024-09-18 19:59:53] [INFO] Requête reçue: /api/posts
+[2024-09-18 19:59:53] [INFO] Redirection vers posts.php
+[2024-09-18 19:59:54] [INFO] Requête reçue: /admin
+[2024-09-18 19:59:54] [INFO] Rendu de la page admin
+[2024-09-18 19:59:54] [INFO] Requête reçue: /api/posts
+[2024-09-18 19:59:54] [INFO] Redirection vers posts.php
+[2024-09-18 19:59:57] [INFO] Requête reçue: /api/posts/11
+[2024-09-18 19:59:57] [INFO] Redirection vers posts.php
+[2024-09-18 20:00:00] [INFO] Requête reçue: /api/posts
+[2024-09-18 20:00:00] [INFO] Redirection vers posts.php

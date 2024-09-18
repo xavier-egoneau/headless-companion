@@ -133,3 +133,57 @@
 [2024-09-18 18:31:30] [INFO] Connexion à la base de données établie
 [2024-09-18 18:31:30] [INFO] Requête SQL exécutée
 [2024-09-18 18:31:30] [INFO] Nombre de posts récupérés : 6
+[2024-09-18 19:20:39] [INFO] Début de l'exécution de Post::findAll()
+[2024-09-18 19:20:39] [INFO] Connexion à la base de données établie
+[2024-09-18 19:20:39] [INFO] Requête SQL exécutée
+[2024-09-18 19:20:39] [INFO] Nombre de posts récupérés : 6
+[2024-09-18 19:20:55] [INFO] Post sauvegardé avec ID: 10
+[2024-09-18 19:31:14] [INFO] Début de l'exécution de Post::findAll()
+[2024-09-18 19:31:14] [INFO] Connexion à la base de données établie
+[2024-09-18 19:31:14] [INFO] Requête SQL exécutée
+[2024-09-18 19:31:14] [INFO] Nombre de posts récupérés : 7
+[2024-09-18 19:31:23] [INFO] Post sauvegardé avec ID: 11
+[2024-09-18 19:31:29] [INFO] Début de l'exécution de Post::findAll()
+[2024-09-18 19:31:29] [INFO] Connexion à la base de données établie
+[2024-09-18 19:31:29] [INFO] Requête SQL exécutée
+[2024-09-18 19:31:29] [INFO] Nombre de posts récupérés : 8
+[2024-09-18 19:31:32] [INFO] Post sauvegardé avec ID: 11
+[2024-09-18 19:35:16] [INFO] Début de l'exécution de Post::findAll()
+[2024-09-18 19:35:16] [INFO] Connexion à la base de données établie
+[2024-09-18 19:35:16] [INFO] Requête SQL exécutée
+[2024-09-18 19:35:16] [INFO] Nombre de posts récupérés : 8
+[2024-09-18 19:35:18] [INFO] Début de l'exécution de Post::findAll()
+[2024-09-18 19:35:18] [INFO] Connexion à la base de données établie
+[2024-09-18 19:35:18] [INFO] Requête SQL exécutée
+[2024-09-18 19:35:18] [INFO] Nombre de posts récupérés : 8
+[2024-09-18 19:35:21] [INFO] Début de l'exécution de Post::findAll()
+[2024-09-18 19:35:21] [INFO] Connexion à la base de données établie
+[2024-09-18 19:35:21] [INFO] Requête SQL exécutée
+[2024-09-18 19:35:21] [INFO] Nombre de posts récupérés : 8
+[2024-09-18 19:35:34] [INFO] Post sauvegardé avec ID: 12
+[2024-09-18 19:35:35] [INFO] Début de l'exécution de Post::findAll()
+[2024-09-18 19:35:35] [INFO] Connexion à la base de données établie
+[2024-09-18 19:35:35] [INFO] Requête SQL exécutée
+[2024-09-18 19:35:35] [INFO] Nombre de posts récupérés : 9
+[2024-09-18 19:38:09] [INFO] Début de l'exécution de Post::findAll()
+[2024-09-18 19:38:09] [INFO] Connexion à la base de données établie
+[2024-09-18 19:38:09] [INFO] Requête SQL exécutée
+[2024-09-18 19:38:09] [INFO] Nombre de posts récupérés : 9
+[2024-09-18 19:38:13] [INFO] Début de l'exécution de Post::findAll()
+[2024-09-18 19:38:13] [INFO] Connexion à la base de données établie
+[2024-09-18 19:38:13] [INFO] Requête SQL exécutée
+[2024-09-18 19:38:13] [INFO] Nombre de posts récupérés : 9
+[2024-09-18 19:59:46] [INFO] Début de l'exécution de Post::findAll()
+[2024-09-18 19:59:46] [INFO] Connexion à la base de données établie
+[2024-09-18 19:59:46] [INFO] Requête SQL exécutée
+[2024-09-18 19:59:46] [INFO] Nombre de posts récupérés : 9
+[2024-09-18 19:59:53] [INFO] Post sauvegardé avec ID: 13
+[2024-09-18 19:59:54] [INFO] Début de l'exécution de Post::findAll()
+[2024-09-18 19:59:54] [INFO] Connexion à la base de données établie
+[2024-09-18 19:59:54] [INFO] Requête SQL exécutée
+[2024-09-18 19:59:54] [INFO] Nombre de posts récupérés : 10
+[2024-09-18 19:59:57] [INFO] Post supprimé avec ID: 11
+[2024-09-18 20:00:00] [INFO] Début de l'exécution de Post::findAll()
+[2024-09-18 20:00:00] [INFO] Connexion à la base de données établie
+[2024-09-18 20:00:00] [INFO] Requête SQL exécutée
+[2024-09-18 20:00:00] [INFO] Nombre de posts récupérés : 9

@@ -13,6 +13,11 @@
             "App\\": "backend/"
         }
     },
+    "scripts": {
+        "post-install-cmd": [
+            "php init_db.php"
+        ]
+    },
     "authors": [
         {
             "name": "Your Name",

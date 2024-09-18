@@ -46,6 +46,18 @@ try {
         $postId = $matches[2] ?? null;
         $logger->info("Rendu du formulaire de post" . ($postId ? " pour l'ID $postId" : ""));
         echo $twig->render('post_form.twig', ['postId' => $postId]);
+    } elseif ($request === '/api/refresh') {
+        $logger->info("Demande de rafraîchissement du token");
+        $refreshToken = $_SERVER['HTTP_AUTHORIZATION'] ?? '';
+        $refreshToken = str_replace('Bearer ', '', $refreshToken);
+        $newToken = refreshJWT($refreshToken);
+        if ($newToken) {
+            echo json_encode(['token' => $newToken]);
+        } else {
+            http_response_code(401);
+            echo json_encode(['error' => 'Refresh token invalide ou expiré']);
+        }
+        
     } else {
         $logger->warning("Route non trouvée: " . $request);
         http_response_code(404);

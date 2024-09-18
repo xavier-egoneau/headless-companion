@@ -110,3 +110,23 @@
 [2024-09-18 18:31:29] [INFO] Utilisateur trouvé: test_user
 [2024-09-18 18:31:29] [INFO] Vérification du mot de passe pour l'utilisateur: test_user
 [2024-09-18 18:31:30] [INFO] Mot de passe correct pour l'utilisateur: test_user
+[2024-09-18 19:20:39] [INFO] Recherche de l'utilisateur: test_user
+[2024-09-18 19:20:39] [INFO] Utilisateur trouvé: test_user
+[2024-09-18 19:20:39] [INFO] Vérification du mot de passe pour l'utilisateur: test_user
+[2024-09-18 19:20:39] [INFO] Mot de passe correct pour l'utilisateur: test_user
+[2024-09-18 19:31:14] [INFO] Recherche de l'utilisateur: test_user
+[2024-09-18 19:31:14] [INFO] Utilisateur trouvé: test_user
+[2024-09-18 19:31:14] [INFO] Vérification du mot de passe pour l'utilisateur: test_user
+[2024-09-18 19:31:14] [INFO] Mot de passe correct pour l'utilisateur: test_user
+[2024-09-18 19:31:29] [INFO] Recherche de l'utilisateur: test_user
+[2024-09-18 19:31:29] [INFO] Utilisateur trouvé: test_user
+[2024-09-18 19:31:29] [INFO] Vérification du mot de passe pour l'utilisateur: test_user
+[2024-09-18 19:31:29] [INFO] Mot de passe correct pour l'utilisateur: test_user
+[2024-09-18 19:38:13] [INFO] Recherche de l'utilisateur: test_user
+[2024-09-18 19:38:13] [INFO] Utilisateur trouvé: test_user
+[2024-09-18 19:38:13] [INFO] Vérification du mot de passe pour l'utilisateur: test_user
+[2024-09-18 19:38:13] [INFO] Mot de passe correct pour l'utilisateur: test_user
+[2024-09-18 19:59:46] [INFO] Recherche de l'utilisateur: test_user
+[2024-09-18 19:59:46] [INFO] Utilisateur trouvé: test_user
+[2024-09-18 19:59:46] [INFO] Vérification du mot de passe pour l'utilisateur: test_user
+[2024-09-18 19:59:46] [INFO] Mot de passe correct pour l'utilisateur: test_user

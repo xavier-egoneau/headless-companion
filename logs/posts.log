@@ -484,3 +484,161 @@ Trace: #0 C:\Users\egza_\Documents\projets\headless-companion\backend\api\posts.
 [2024-09-18 18:31:41] [INFO] Token validé pour l'utilisateur ID: 1
 [2024-09-18 18:31:41] [INFO] Récupération du post avec ID: 9
 [2024-09-18 18:31:41] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:20:39] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:20:39] [INFO] Méthode de la requête: GET
+[2024-09-18 19:20:39] [INFO] URI de la requête: /api/posts
+[2024-09-18 19:20:39] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODcyMzksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODcyMzksImV4cCI6MTcyNjY5MDgzOSwidXNlcklkIjoxfQ.yI5eh-PWJE4-qRPJOPAo5WcoG9JUh-A9cKKgdg7pQuw","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:20:39] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODcyMzksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODcyMzksImV4cCI6MTcyNjY5MDgzOSwidXNlcklkIjoxfQ.yI5eh-PWJE4-qRPJOPAo5WcoG9JUh-A9cKKgdg7pQuw
+[2024-09-18 19:20:39] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:20:39] [INFO] Récupération de tous les posts
+[2024-09-18 19:20:39] [INFO] Nombre de posts trouvés: 6
+[2024-09-18 19:20:39] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:20:55] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:20:55] [INFO] Méthode de la requête: POST
+[2024-09-18 19:20:55] [INFO] URI de la requête: /api/posts
+[2024-09-18 19:20:55] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"50","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODcyMzksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODcyMzksImV4cCI6MTcyNjY5MDgzOSwidXNlcklkIjoxfQ.yI5eh-PWJE4-qRPJOPAo5WcoG9JUh-A9cKKgdg7pQuw","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Origin":"http:\/\/localhost:8000","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin\/post","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:20:55] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODcyMzksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODcyMzksImV4cCI6MTcyNjY5MDgzOSwidXNlcklkIjoxfQ.yI5eh-PWJE4-qRPJOPAo5WcoG9JUh-A9cKKgdg7pQuw
+[2024-09-18 19:20:55] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:20:55] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:31:14] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:31:14] [INFO] Méthode de la requête: GET
+[2024-09-18 19:31:14] [INFO] URI de la requête: /api/posts
+[2024-09-18 19:31:14] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4NzQsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4NzQsImV4cCI6MTcyNjY5MTQ3NCwidXNlcklkIjoxfQ.Lkwc74rhbo6Tftz9gAdibn5Hyn2oMQeNRJVM7qqhfOI","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:31:14] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4NzQsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4NzQsImV4cCI6MTcyNjY5MTQ3NCwidXNlcklkIjoxfQ.Lkwc74rhbo6Tftz9gAdibn5Hyn2oMQeNRJVM7qqhfOI
+[2024-09-18 19:31:14] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:31:14] [INFO] Récupération de tous les posts
+[2024-09-18 19:31:14] [INFO] Nombre de posts trouvés: 7
+[2024-09-18 19:31:14] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:31:23] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:31:23] [INFO] Méthode de la requête: POST
+[2024-09-18 19:31:23] [INFO] URI de la requête: /api/posts
+[2024-09-18 19:31:23] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"48","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4NzQsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4NzQsImV4cCI6MTcyNjY5MTQ3NCwidXNlcklkIjoxfQ.Lkwc74rhbo6Tftz9gAdibn5Hyn2oMQeNRJVM7qqhfOI","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Origin":"http:\/\/localhost:8000","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin\/post","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:31:23] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4NzQsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4NzQsImV4cCI6MTcyNjY5MTQ3NCwidXNlcklkIjoxfQ.Lkwc74rhbo6Tftz9gAdibn5Hyn2oMQeNRJVM7qqhfOI
+[2024-09-18 19:31:23] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:31:23] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:31:29] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:31:29] [INFO] Méthode de la requête: GET
+[2024-09-18 19:31:29] [INFO] URI de la requête: /api/posts
+[2024-09-18 19:31:29] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:31:29] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:31:29] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:31:29] [INFO] Récupération de tous les posts
+[2024-09-18 19:31:29] [INFO] Nombre de posts trouvés: 8
+[2024-09-18 19:31:29] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:31:30] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:31:30] [INFO] Méthode de la requête: GET
+[2024-09-18 19:31:30] [INFO] URI de la requête: /api/posts/11
+[2024-09-18 19:31:30] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin\/post\/11","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:31:30] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:31:30] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:31:30] [INFO] Récupération du post avec ID: 11
+[2024-09-18 19:31:30] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:31:32] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:31:32] [INFO] Méthode de la requête: PUT
+[2024-09-18 19:31:32] [INFO] URI de la requête: /api/posts/11
+[2024-09-18 19:31:32] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"48","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Origin":"http:\/\/localhost:8000","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin\/post\/11","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:31:32] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:31:32] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:31:32] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:35:16] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:35:16] [INFO] Méthode de la requête: GET
+[2024-09-18 19:35:16] [INFO] URI de la requête: /api/posts
+[2024-09-18 19:35:16] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:35:16] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:35:16] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:35:16] [INFO] Récupération de tous les posts
+[2024-09-18 19:35:16] [INFO] Nombre de posts trouvés: 8
+[2024-09-18 19:35:16] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:35:18] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:35:18] [INFO] Méthode de la requête: GET
+[2024-09-18 19:35:18] [INFO] URI de la requête: /api/posts
+[2024-09-18 19:35:18] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:35:18] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:35:18] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:35:18] [INFO] Récupération de tous les posts
+[2024-09-18 19:35:18] [INFO] Nombre de posts trouvés: 8
+[2024-09-18 19:35:18] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:35:21] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:35:21] [INFO] Méthode de la requête: GET
+[2024-09-18 19:35:21] [INFO] URI de la requête: /api/posts
+[2024-09-18 19:35:21] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:35:21] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:35:21] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:35:21] [INFO] Récupération de tous les posts
+[2024-09-18 19:35:21] [INFO] Nombre de posts trouvés: 8
+[2024-09-18 19:35:21] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:35:34] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:35:34] [INFO] Méthode de la requête: POST
+[2024-09-18 19:35:34] [INFO] URI de la requête: /api/posts
+[2024-09-18 19:35:34] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"55","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Origin":"http:\/\/localhost:8000","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin\/post","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:35:34] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:35:34] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:35:34] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:35:35] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:35:35] [INFO] Méthode de la requête: GET
+[2024-09-18 19:35:35] [INFO] URI de la requête: /api/posts
+[2024-09-18 19:35:35] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:35:35] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:35:35] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:35:35] [INFO] Récupération de tous les posts
+[2024-09-18 19:35:35] [INFO] Nombre de posts trouvés: 9
+[2024-09-18 19:35:35] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:38:09] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:38:09] [INFO] Méthode de la requête: GET
+[2024-09-18 19:38:09] [INFO] URI de la requête: /api/posts
+[2024-09-18 19:38:09] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:38:09] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:38:09] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:38:09] [INFO] Récupération de tous les posts
+[2024-09-18 19:38:09] [INFO] Nombre de posts trouvés: 9
+[2024-09-18 19:38:09] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:38:13] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:38:13] [INFO] Méthode de la requête: GET
+[2024-09-18 19:38:13] [INFO] URI de la requête: /api/posts
+[2024-09-18 19:38:13] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODgyOTMsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODgyOTMsImV4cCI6MTcyNjY5MTg5MywidXNlcklkIjoxfQ.2AwvLUZV0vLOSb6htD45nxMWwWdvVFi-Z7DHD0cYGFk","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:38:13] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODgyOTMsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODgyOTMsImV4cCI6MTcyNjY5MTg5MywidXNlcklkIjoxfQ.2AwvLUZV0vLOSb6htD45nxMWwWdvVFi-Z7DHD0cYGFk
+[2024-09-18 19:38:13] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:38:13] [INFO] Récupération de tous les posts
+[2024-09-18 19:38:13] [INFO] Nombre de posts trouvés: 9
+[2024-09-18 19:38:13] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:59:46] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:59:46] [INFO] Méthode de la requête: GET
+[2024-09-18 19:59:46] [INFO] URI de la requête: /api/posts
+[2024-09-18 19:59:46] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODk1ODYsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODk1ODYsImV4cCI6MTcyNjY5MzE4NiwidXNlcklkIjoxfQ.Zi1eNkNvPn9z3fzIg6f4vL1X9VbeJUpp07og2_GZdU8","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:59:46] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODk1ODYsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODk1ODYsImV4cCI6MTcyNjY5MzE4NiwidXNlcklkIjoxfQ.Zi1eNkNvPn9z3fzIg6f4vL1X9VbeJUpp07og2_GZdU8
+[2024-09-18 19:59:46] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:59:46] [INFO] Récupération de tous les posts
+[2024-09-18 19:59:46] [INFO] Nombre de posts trouvés: 9
+[2024-09-18 19:59:46] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:59:53] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:59:53] [INFO] Méthode de la requête: POST
+[2024-09-18 19:59:53] [INFO] URI de la requête: /api/posts
+[2024-09-18 19:59:53] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"51","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODk1ODYsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODk1ODYsImV4cCI6MTcyNjY5MzE4NiwidXNlcklkIjoxfQ.Zi1eNkNvPn9z3fzIg6f4vL1X9VbeJUpp07og2_GZdU8","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Origin":"http:\/\/localhost:8000","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin\/post","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:59:53] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODk1ODYsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODk1ODYsImV4cCI6MTcyNjY5MzE4NiwidXNlcklkIjoxfQ.Zi1eNkNvPn9z3fzIg6f4vL1X9VbeJUpp07og2_GZdU8
+[2024-09-18 19:59:53] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:59:53] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:59:54] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:59:54] [INFO] Méthode de la requête: GET
+[2024-09-18 19:59:54] [INFO] URI de la requête: /api/posts
+[2024-09-18 19:59:54] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODk1ODYsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODk1ODYsImV4cCI6MTcyNjY5MzE4NiwidXNlcklkIjoxfQ.Zi1eNkNvPn9z3fzIg6f4vL1X9VbeJUpp07og2_GZdU8","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:59:54] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODk1ODYsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODk1ODYsImV4cCI6MTcyNjY5MzE4NiwidXNlcklkIjoxfQ.Zi1eNkNvPn9z3fzIg6f4vL1X9VbeJUpp07og2_GZdU8
+[2024-09-18 19:59:54] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:59:54] [INFO] Récupération de tous les posts
+[2024-09-18 19:59:54] [INFO] Nombre de posts trouvés: 10
+[2024-09-18 19:59:54] [INFO] Fin du traitement de la requête posts
+[2024-09-18 19:59:57] [INFO] Début du traitement de la requête posts
+[2024-09-18 19:59:57] [INFO] Méthode de la requête: DELETE
+[2024-09-18 19:59:57] [INFO] URI de la requête: /api/posts/11
+[2024-09-18 19:59:57] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODk1ODYsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODk1ODYsImV4cCI6MTcyNjY5MzE4NiwidXNlcklkIjoxfQ.Zi1eNkNvPn9z3fzIg6f4vL1X9VbeJUpp07og2_GZdU8","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","sec-ch-ua-platform":"\"Windows\"","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Origin":"http:\/\/localhost:8000","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 19:59:57] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODk1ODYsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODk1ODYsImV4cCI6MTcyNjY5MzE4NiwidXNlcklkIjoxfQ.Zi1eNkNvPn9z3fzIg6f4vL1X9VbeJUpp07og2_GZdU8
+[2024-09-18 19:59:57] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 19:59:57] [INFO] Fin du traitement de la requête posts
+[2024-09-18 20:00:00] [INFO] Début du traitement de la requête posts
+[2024-09-18 20:00:00] [INFO] Méthode de la requête: GET
+[2024-09-18 20:00:00] [INFO] URI de la requête: /api/posts
+[2024-09-18 20:00:00] [INFO] En-têtes reçus: {"Host":"localhost:8000","Connection":"keep-alive","Pragma":"no-cache","Cache-Control":"no-cache","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Brave\";v=\"128\"","sec-ch-ua-platform":"\"Windows\"","sec-ch-ua-mobile":"?0","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODk1ODYsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODk1ODYsImV4cCI6MTcyNjY5MzE4NiwidXNlcklkIjoxfQ.Zi1eNkNvPn9z3fzIg6f4vL1X9VbeJUpp07og2_GZdU8","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36","Content-Type":"application\/json","Accept":"*\/*","Sec-GPC":"1","Accept-Language":"fr-FR,fr","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http:\/\/localhost:8000\/admin","Accept-Encoding":"gzip, deflate, br, zstd"}
+[2024-09-18 20:00:00] [INFO] Auth Header: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODk1ODYsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODk1ODYsImV4cCI6MTcyNjY5MzE4NiwidXNlcklkIjoxfQ.Zi1eNkNvPn9z3fzIg6f4vL1X9VbeJUpp07og2_GZdU8
+[2024-09-18 20:00:00] [INFO] Token validé pour l'utilisateur ID: 1
+[2024-09-18 20:00:00] [INFO] Récupération de tous les posts
+[2024-09-18 20:00:00] [INFO] Nombre de posts trouvés: 9
+[2024-09-18 20:00:00] [INFO] Fin du traitement de la requête posts

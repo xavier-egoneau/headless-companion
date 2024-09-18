@@ -162,3 +162,59 @@
 [2024-09-18 18:31:30] [INFO] JWT décodé avec succès. User ID: 1
 [2024-09-18 18:31:41] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODQyOTAsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODQyOTAsImV4cCI6MTcyNjY4Nzg5MCwidXNlcklkIjoxfQ.Mu3rFlkd8LgZhJX9OL_9tFc-ea3TzYnO9PwLYrpreRA
 [2024-09-18 18:31:41] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:20:39] [INFO] Génération du JWT pour l'utilisateur ID: 1
+[2024-09-18 19:20:39] [INFO] JWT généré avec succès pour l'utilisateur ID: 1
+[2024-09-18 19:20:39] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODcyMzksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODcyMzksImV4cCI6MTcyNjY5MDgzOSwidXNlcklkIjoxfQ.yI5eh-PWJE4-qRPJOPAo5WcoG9JUh-A9cKKgdg7pQuw
+[2024-09-18 19:20:39] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:20:55] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODcyMzksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODcyMzksImV4cCI6MTcyNjY5MDgzOSwidXNlcklkIjoxfQ.yI5eh-PWJE4-qRPJOPAo5WcoG9JUh-A9cKKgdg7pQuw
+[2024-09-18 19:20:55] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:31:14] [INFO] Génération du JWT pour l'utilisateur ID: 1
+[2024-09-18 19:31:14] [INFO] JWT généré avec succès pour l'utilisateur ID: 1
+[2024-09-18 19:31:14] [INFO] Génération du refresh token pour l'utilisateur ID: 1
+[2024-09-18 19:31:14] [INFO] Refresh token généré avec succès pour l'utilisateur ID: 1
+[2024-09-18 19:31:14] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4NzQsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4NzQsImV4cCI6MTcyNjY5MTQ3NCwidXNlcklkIjoxfQ.Lkwc74rhbo6Tftz9gAdibn5Hyn2oMQeNRJVM7qqhfOI
+[2024-09-18 19:31:14] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:31:23] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4NzQsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4NzQsImV4cCI6MTcyNjY5MTQ3NCwidXNlcklkIjoxfQ.Lkwc74rhbo6Tftz9gAdibn5Hyn2oMQeNRJVM7qqhfOI
+[2024-09-18 19:31:23] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:31:29] [INFO] Génération du JWT pour l'utilisateur ID: 1
+[2024-09-18 19:31:29] [INFO] JWT généré avec succès pour l'utilisateur ID: 1
+[2024-09-18 19:31:29] [INFO] Génération du refresh token pour l'utilisateur ID: 1
+[2024-09-18 19:31:29] [INFO] Refresh token généré avec succès pour l'utilisateur ID: 1
+[2024-09-18 19:31:29] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:31:29] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:31:30] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:31:30] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:31:32] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:31:32] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:35:16] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:35:16] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:35:18] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:35:18] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:35:21] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:35:21] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:35:34] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:35:34] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:35:35] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:35:35] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:38:09] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODc4ODksImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODc4ODksImV4cCI6MTcyNjY5MTQ4OSwidXNlcklkIjoxfQ.BpoXN8EgGVXkpQD758BTIyx2hgYKkzD8TpYlyaP9VWc
+[2024-09-18 19:38:09] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:38:13] [INFO] Génération du JWT pour l'utilisateur ID: 1
+[2024-09-18 19:38:13] [INFO] JWT généré avec succès pour l'utilisateur ID: 1
+[2024-09-18 19:38:13] [INFO] Génération du refresh token pour l'utilisateur ID: 1
+[2024-09-18 19:38:13] [INFO] Refresh token généré avec succès pour l'utilisateur ID: 1
+[2024-09-18 19:38:13] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODgyOTMsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODgyOTMsImV4cCI6MTcyNjY5MTg5MywidXNlcklkIjoxfQ.2AwvLUZV0vLOSb6htD45nxMWwWdvVFi-Z7DHD0cYGFk
+[2024-09-18 19:38:13] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:59:46] [INFO] Génération du JWT pour l'utilisateur ID: 1
+[2024-09-18 19:59:46] [INFO] JWT généré avec succès pour l'utilisateur ID: 1
+[2024-09-18 19:59:46] [INFO] Génération du refresh token pour l'utilisateur ID: 1
+[2024-09-18 19:59:46] [INFO] Refresh token généré avec succès pour l'utilisateur ID: 1
+[2024-09-18 19:59:46] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODk1ODYsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODk1ODYsImV4cCI6MTcyNjY5MzE4NiwidXNlcklkIjoxfQ.Zi1eNkNvPn9z3fzIg6f4vL1X9VbeJUpp07og2_GZdU8
+[2024-09-18 19:59:46] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:59:53] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODk1ODYsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODk1ODYsImV4cCI6MTcyNjY5MzE4NiwidXNlcklkIjoxfQ.Zi1eNkNvPn9z3fzIg6f4vL1X9VbeJUpp07og2_GZdU8
+[2024-09-18 19:59:53] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:59:54] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODk1ODYsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODk1ODYsImV4cCI6MTcyNjY5MzE4NiwidXNlcklkIjoxfQ.Zi1eNkNvPn9z3fzIg6f4vL1X9VbeJUpp07og2_GZdU8
+[2024-09-18 19:59:54] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 19:59:57] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODk1ODYsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODk1ODYsImV4cCI6MTcyNjY5MzE4NiwidXNlcklkIjoxfQ.Zi1eNkNvPn9z3fzIg6f4vL1X9VbeJUpp07og2_GZdU8
+[2024-09-18 19:59:57] [INFO] JWT décodé avec succès. User ID: 1
+[2024-09-18 20:00:00] [INFO] Vérification du JWT: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY2ODk1ODYsImlzcyI6InlvdXJfc2VydmVyX25hbWUiLCJuYmYiOjE3MjY2ODk1ODYsImV4cCI6MTcyNjY5MzE4NiwidXNlcklkIjoxfQ.Zi1eNkNvPn9z3fzIg6f4vL1X9VbeJUpp07og2_GZdU8
+[2024-09-18 20:00:00] [INFO] JWT décodé avec succès. User ID: 1
